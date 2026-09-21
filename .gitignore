@@ -8,3 +8,5 @@ backend/.env
 backend/.venv/
 
 !backend/database_schema.sql
+
+**/__pycache__/
