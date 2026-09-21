@@ -1,0 +1,255 @@
+{
+  "source": "https://bhusanket.gsi.gov.in/WebAPI_v2/LandslideIncidence/datalist",
+  "generated_at_utc": "2026-09-07T17:29:09.222792+00:00",
+  "counters": {
+    "fetched": 1469,
+    "accepted_northeast": 39,
+    "rejected_content": 1403,
+    "rejected_state": 23,
+    "rejected_missing_title": 0,
+    "rejected_not_landslide": 0,
+    "rejected_other": 0,
+    "deduplicated": 4,
+    "spatial_events": 22,
+    "historical_nonspatial": 15,
+    "review_required": 2,
+    "missing_coordinates": 16,
+    "exact_day_dates": 31,
+    "month_only_dates": 7,
+    "year_only_dates": 0,
+    "unknown_dates": 1,
+    "district_conflicts": 1,
+    "training_eligible": 20
+  },
+  "quality_issue_count": 25,
+  "quality_issues": [
+    {
+      "issue": "missing_coordinates",
+      "source_id": "7",
+      "state": "Meghalaya",
+      "district": "East Khasi Hills District",
+      "title": "Landslide in Lumjingsuk Block, Madanryting, East Khasi Hills District, Meghalaya in July 2023",
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "non_exact_date",
+      "date_precision": "MONTH",
+      "source_id": "7",
+      "state": "Meghalaya",
+      "district": "East Khasi Hills District",
+      "title": "Landslide in Lumjingsuk Block, Madanryting, East Khasi Hills District, Meghalaya in July 2023",
+      "year": 2023,
+      "month": 7,
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "missing_coordinates",
+      "source_id": "12",
+      "state": "Meghalaya",
+      "district": "East Khasi Hills District",
+      "title": "Landslide at Laitlarem, East Khasi Hills District, Meghalaya on 15th June 2022",
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "missing_coordinates",
+      "source_id": "16",
+      "state": "Meghalaya",
+      "district": "South Garo Hills District",
+      "title": "Landslide at Nongal Bibra, South Garo Hills District, Meghalaya on 17th June 2022",
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "missing_coordinates",
+      "source_id": "22",
+      "state": "Mizoram",
+      "district": "Aizawl District",
+      "title": "Landslide in Hospital area, Thingsulthliah, Aizwal district, Mizoram (9th Oct 2021)",
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "non_exact_date",
+      "date_precision": "MONTH",
+      "source_id": "26",
+      "state": "Meghalaya",
+      "district": "East Khasi Hills District",
+      "title": "Landslides near Umiam view point along NH-40, East Khasi hills district, Meghalaya (Sept 2021)",
+      "year": 2021,
+      "month": 9,
+      "classification": "SPATIAL_EVENT"
+    },
+    {
+      "issue": "non_exact_date",
+      "date_precision": "MONTH",
+      "source_id": "27",
+      "state": "Meghalaya",
+      "district": "East Khasi Hills District",
+      "title": "Landslide at North-West of Sohiong village along NH-44E (by pass road), East Khasi hills district, Meghalaya (Sept 2021)",
+      "year": 2021,
+      "month": 9,
+      "classification": "SPATIAL_EVENT"
+    },
+    {
+      "issue": "missing_coordinates",
+      "source_id": "53",
+      "state": "Arunachal Pradesh",
+      "district": "Udalguri District",
+      "title": "Landslides at Bhairabkunda, Udalguri District, Arunachal Pradesh (28th April 21)",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "issue": "non_exact_date",
+      "date_precision": "UNKNOWN",
+      "source_id": "53",
+      "state": "Arunachal Pradesh",
+      "district": "Udalguri District",
+      "title": "Landslides at Bhairabkunda, Udalguri District, Arunachal Pradesh (28th April 21)",
+      "year": null,
+      "month": null,
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "issue": "missing_coordinates",
+      "source_id": "57",
+      "state": "Manipur",
+      "district": "Noney District",
+      "title": "Landslide around Longmai-Khumji Noney Area, Noney District, Manipur (June-July, 2020)",
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "non_exact_date",
+      "date_precision": "MONTH",
+      "source_id": "57",
+      "state": "Manipur",
+      "district": "Noney District",
+      "title": "Landslide around Longmai-Khumji Noney Area, Noney District, Manipur (June-July, 2020)",
+      "year": 2020,
+      "month": 6,
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "missing_coordinates",
+      "source_id": "58",
+      "state": "Manipur",
+      "district": "Noney District",
+      "title": "Landslide around Mao Town, Senapati District, Manipur (July, 2020)",
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "non_exact_date",
+      "date_precision": "MONTH",
+      "source_id": "58",
+      "state": "Manipur",
+      "district": "Noney District",
+      "title": "Landslide around Mao Town, Senapati District, Manipur (July, 2020)",
+      "year": 2020,
+      "month": 7,
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "district_text_field_conflict",
+      "api_district": "Noney District",
+      "textual_districts": [
+        "Senapati"
+      ],
+      "conflicting_districts": [
+        "Senapati"
+      ],
+      "state": "Manipur",
+      "title": "Landslide around Mao Town, Senapati District, Manipur (July, 2020)"
+    },
+    {
+      "issue": "missing_coordinates",
+      "source_id": "59",
+      "state": "Arunachal Pradesh",
+      "district": "Papumpare District",
+      "title": "Landslide at Tigdo Village, Papumpare District, Arunachal Pradesh on 10th July, 2020",
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "missing_coordinates",
+      "source_id": "60",
+      "state": "Arunachal Pradesh",
+      "district": "Papumpare District",
+      "title": "Landslide at Donyi Colony, Papumpare District, Arunachal Pradesh on 25th June, 2020",
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "missing_coordinates",
+      "source_id": "61",
+      "state": "Assam",
+      "district": "Many Districts",
+      "title": "Landslides in Cachar, Hailakandi and Karimganj Districts, Assam (June, 2020)",
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "non_exact_date",
+      "date_precision": "MONTH",
+      "source_id": "61",
+      "state": "Assam",
+      "district": "Many Districts",
+      "title": "Landslides in Cachar, Hailakandi and Karimganj Districts, Assam (June, 2020)",
+      "year": 2020,
+      "month": 6,
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "missing_coordinates",
+      "source_id": "62",
+      "state": "Meghalaya",
+      "district": "West Jaintia Hills District",
+      "title": "Landslide at Jowai, Kabi Village, West Jaintia Hills District, Meghalaya on 26 May, 2020",
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "missing_coordinates",
+      "source_id": "63",
+      "state": "Meghalaya",
+      "district": "East Khasi Hills District",
+      "title": "Landslide at Mawlai-Umjapung, East Khasi Hills District, Meghalaya on 21 May, 2020",
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "missing_coordinates",
+      "source_id": "64",
+      "state": "Sikkim",
+      "district": "North Sikkim District",
+      "title": "Landslide at Kabi Village, North Sikkim District, Sikkim on 24 May, 2020",
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "missing_coordinates",
+      "source_id": "65",
+      "state": "Sikkim",
+      "district": "North Sikkim District",
+      "title": "Landslide at Dhare & Sitala, Kabi Village, North Sikkim District, Sikkim on 24 May, 2020",
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "missing_coordinates",
+      "source_id": "66",
+      "state": "Nagaland",
+      "district": "Wokha District",
+      "title": "Landslide at Bhandari Town, Wokha District, Nagaland in November 2019",
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "non_exact_date",
+      "date_precision": "MONTH",
+      "source_id": "66",
+      "state": "Nagaland",
+      "district": "Wokha District",
+      "title": "Landslide at Bhandari Town, Wokha District, Nagaland in November 2019",
+      "year": 2019,
+      "month": 11,
+      "classification": "HISTORICAL_NONSPATIAL"
+    },
+    {
+      "issue": "missing_coordinates",
+      "source_id": "67",
+      "state": "Nagaland",
+      "district": "Dimapur District",
+      "title": "Landslide at NIT Campus, Dimapur District, Nagaland on 26th October, 2019",
+      "classification": "HISTORICAL_NONSPATIAL"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+id,asset_code,name,asset_type,district_id,risk_zone_id,risk_level,probability,priority,exposure_count,status,recommendation,geometry_text,capacity,created_at,updated_at
+12,SH-ES-001,Auditorium Hall IGJHSS,SHELTER,13,,LOW,0.1103,P3,0,MONITORING,Continue monitoring and reassess if rainfall or field evidence increases.,POINT(94.4222688801398 26.921335119895375),200,2026-09-10 03:45:48.330376,2026-09-20 10:30:36.093757
+13,SH-ES-002,Auditorium Hall Tourism,SHELTER,13,,LOW,0.1103,P3,0,MONITORING,Continue monitoring and reassess if rainfall or field evidence increases.,,150,2026-09-10 03:45:48.330376,2026-09-20 10:30:36.093757
+14,SH-ES-003,"Town Club, High Region",SHELTER,13,,LOW,0.1103,P3,0,MONITORING,Continue monitoring and reassess if rainfall or field evidence increases.,,100,2026-09-10 03:45:48.330376,2026-09-20 10:30:36.093757
+15,SH-ES-004,"Kebang Hall, Ruksin",SHELTER,13,,LOW,0.1103,P3,0,MONITORING,Continue monitoring and reassess if rainfall or field evidence increases.,,50,2026-09-10 03:45:48.330376,2026-09-20 10:30:36.093757
+16,SH-ES-005,Higher Sec. School Bilat,SHELTER,13,,LOW,0.1103,P3,0,MONITORING,Continue monitoring and reassess if rainfall or field evidence increases.,,50,2026-09-10 03:45:48.330376,2026-09-20 10:30:36.093757
+17,SH-ES-006,Higher Sec. School Sille,SHELTER,13,,LOW,0.1103,P3,0,MONITORING,Continue monitoring and reassess if rainfall or field evidence increases.,,100,2026-09-10 03:45:48.330376,2026-09-20 10:30:36.093757
+18,SH-ES-007,Sec. School Kiyit,SHELTER,13,,LOW,0.1103,P3,0,MONITORING,Continue monitoring and reassess if rainfall or field evidence increases.,,200,2026-09-10 03:45:48.330376,2026-09-20 10:30:36.093757
+19,SH-ES-008,"Musup, Kiyit/Ngopo Villages",SHELTER,13,,LOW,0.1103,P3,0,MONITORING,Continue monitoring and reassess if rainfall or field evidence increases.,,100,2026-09-10 03:45:48.330376,2026-09-20 10:30:36.093757

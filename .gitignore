@@ -1,0 +1,10 @@
+
+# Secrets and local database dumps
+backend/.env
+*.sql
+*.dump
+*.backup
+
+backend/.venv/
+
+!backend/database_schema.sql

@@ -1,0 +1,58 @@
+{
+  "status": "success",
+  "input_dataset": "C:\\NER-Landslide-Prototype\\backend\\data\\gsi\\gsi_training_spatial_validated.json",
+  "output_dataset": "C:\\NER-Landslide-Prototype\\backend\\data\\gsi\\gsi_training_terrain_dataset.json",
+  "terrain_source": "Copernicus DEM GLO-90",
+  "dem_resolution_m": 90.0,
+  "tiles": [
+    "Copernicus_DSM_COG_30_N23_00_E092_00_DEM",
+    "Copernicus_DSM_COG_30_N24_00_E092_00_DEM",
+    "Copernicus_DSM_COG_30_N24_00_E094_00_DEM",
+    "Copernicus_DSM_COG_30_N25_00_E090_00_DEM",
+    "Copernicus_DSM_COG_30_N25_00_E091_00_DEM",
+    "Copernicus_DSM_COG_30_N25_00_E092_00_DEM",
+    "Copernicus_DSM_COG_30_N25_00_E093_00_DEM",
+    "Copernicus_DSM_COG_30_N26_00_E090_00_DEM",
+    "Copernicus_DSM_COG_30_N26_00_E091_00_DEM",
+    "Copernicus_DSM_COG_30_N26_00_E093_00_DEM",
+    "Copernicus_DSM_COG_30_N26_00_E094_00_DEM",
+    "Copernicus_DSM_COG_30_N26_00_E095_00_DEM",
+    "Copernicus_DSM_COG_30_N27_00_E088_00_DEM",
+    "Copernicus_DSM_COG_30_N27_00_E092_00_DEM",
+    "Copernicus_DSM_COG_30_N27_00_E093_00_DEM",
+    "Copernicus_DSM_COG_30_N27_00_E094_00_DEM",
+    "Copernicus_DSM_COG_30_N27_00_E095_00_DEM",
+    "Copernicus_DSM_COG_30_N28_00_E093_00_DEM",
+    "Copernicus_DSM_COG_30_N28_00_E094_00_DEM",
+    "Copernicus_DSM_COG_30_N28_00_E095_00_DEM",
+    "Copernicus_DSM_COG_30_N28_00_E096_00_DEM"
+  ],
+  "pixel_size_m": {
+    "x": 83.3781276950194,
+    "y": 92.76666666666667
+  },
+  "counters": {
+    "total": 39,
+    "terrain_available": 39,
+    "terrain_missing": 0,
+    "edge_or_invalid": 0,
+    "very_steep": 0,
+    "elevation_review": 0,
+    "invalid_slope": 0,
+    "invalid_aspect": 0
+  },
+  "positive_records": 14,
+  "background_records": 25,
+  "sanity_checks": {
+    "slope_range": "0-90 degrees",
+    "aspect_range": "0-360 degrees",
+    "elevation_review_threshold_m": 9000,
+    "very_steep_review_threshold_deg": 60
+  },
+  "scientific_note": "Slope and aspect are derived from real DEM raster data using local finite differences. They are not approximated from a single point elevation.",
+  "limitations": [
+    "GLO-90 has approximately 90 m horizontal resolution.",
+    "The current terrain dataset still requires geology, land cover, road proximity and other predictors.",
+    "Spatial validation currently uses the provisional Northeast geographic envelope."
+  ]
+}

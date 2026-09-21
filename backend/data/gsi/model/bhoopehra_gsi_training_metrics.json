@@ -1,0 +1,345 @@
+{
+  "generated_at_utc": "2026-09-08T13:26:00.197962+00:00",
+  "dataset": {
+    "input_file": "C:\\NER-Landslide-Prototype\\backend\\data\\gsi\\gsi_final_training_dataset.json",
+    "records_loaded": 39,
+    "records_used": 39,
+    "positive": 14,
+    "background": 25,
+    "unknown_labels_excluded": 0
+  },
+  "feature_coverage": {
+    "elevation_m": {
+      "available": 39,
+      "total": 39,
+      "coverage_percent": 100.0
+    },
+    "slope_deg": {
+      "available": 39,
+      "total": 39,
+      "coverage_percent": 100.0
+    },
+    "aspect_deg": {
+      "available": 39,
+      "total": 39,
+      "coverage_percent": 100.0
+    },
+    "curvature": {
+      "available": 0,
+      "total": 39,
+      "coverage_percent": 0.0
+    },
+    "roughness": {
+      "available": 0,
+      "total": 39,
+      "coverage_percent": 0.0
+    },
+    "tpi": {
+      "available": 0,
+      "total": 39,
+      "coverage_percent": 0.0
+    },
+    "rainfall_24h_mm": {
+      "available": 39,
+      "total": 39,
+      "coverage_percent": 100.0
+    },
+    "rainfall_72h_mm": {
+      "available": 39,
+      "total": 39,
+      "coverage_percent": 100.0
+    },
+    "rainfall_7d_mm": {
+      "available": 0,
+      "total": 39,
+      "coverage_percent": 0.0
+    },
+    "rainfall_30d_mm": {
+      "available": 0,
+      "total": 39,
+      "coverage_percent": 0.0
+    },
+    "antecedent_rainfall_mm": {
+      "available": 0,
+      "total": 39,
+      "coverage_percent": 0.0
+    },
+    "rainfall_intensity_mm_h": {
+      "available": 0,
+      "total": 39,
+      "coverage_percent": 0.0
+    },
+    "soil_moisture": {
+      "available": 39,
+      "total": 39,
+      "coverage_percent": 100.0
+    },
+    "forecast_rainfall_mm": {
+      "available": 0,
+      "total": 39,
+      "coverage_percent": 0.0
+    },
+    "distance_to_road_m": {
+      "available": 33,
+      "total": 39,
+      "coverage_percent": 84.62
+    },
+    "nearest_road_importance": {
+      "available": 39,
+      "total": 39,
+      "coverage_percent": 100.0
+    },
+    "road_length_1km_m": {
+      "available": 39,
+      "total": 39,
+      "coverage_percent": 100.0
+    },
+    "road_length_5km_m": {
+      "available": 39,
+      "total": 39,
+      "coverage_percent": 100.0
+    },
+    "road_count_1km": {
+      "available": 39,
+      "total": 39,
+      "coverage_percent": 100.0
+    },
+    "road_count_5km": {
+      "available": 39,
+      "total": 39,
+      "coverage_percent": 100.0
+    },
+    "road_density_1km_km_per_km2": {
+      "available": 39,
+      "total": 39,
+      "coverage_percent": 100.0
+    },
+    "road_density_5km_km_per_km2": {
+      "available": 39,
+      "total": 39,
+      "coverage_percent": 100.0
+    },
+    "state": {
+      "available": 39,
+      "total": 39,
+      "coverage_percent": 100.0
+    },
+    "nearest_road_class": {
+      "available": 39,
+      "total": 39,
+      "coverage_percent": 100.0
+    },
+    "lulc_class": {
+      "available": 39,
+      "total": 39,
+      "coverage_percent": 100.0
+    },
+    "lithology_class": {
+      "available": 39,
+      "total": 39,
+      "coverage_percent": 100.0
+    }
+  },
+  "feature_matrix": {
+    "features_before_filtering": 47,
+    "features_after_filtering": 39,
+    "dropped_features": [
+      "curvature",
+      "roughness",
+      "tpi",
+      "rainfall_7d_mm",
+      "rainfall_30d_mm",
+      "antecedent_rainfall_mm",
+      "rainfall_intensity_mm_h",
+      "forecast_rainfall_mm"
+    ],
+    "missing_cells_before_imputation": 6
+  },
+  "leakage_controls": {
+    "latitude_used": false,
+    "longitude_used": false,
+    "district_used": false,
+    "dominance_warning_threshold": 0.7,
+    "dominance_status": "OK"
+  },
+  "training": {
+    "model": "XGBoostClassifier",
+    "parameters": {
+      "n_estimators": 120,
+      "max_depth": 2,
+      "learning_rate": 0.05,
+      "subsample": 0.85,
+      "colsample_bytree": 0.8,
+      "min_child_weight": 3,
+      "reg_alpha": 0.2,
+      "reg_lambda": 2.0,
+      "objective": "binary:logistic",
+      "eval_metric": "logloss",
+      "random_state": 42,
+      "n_jobs": -1,
+      "tree_method": "hist"
+    },
+    "risk_threshold": 0.5,
+    "training_metrics": {
+      "threshold": 0.5,
+      "accuracy": 0.8717948717948718,
+      "precision": 0.8461538461538461,
+      "recall": 0.7857142857142857,
+      "f1": 0.8148148148148148,
+      "roc_auc": 0.9242857142857143,
+      "pr_auc": 0.9024270372484658,
+      "brier_score": 0.11073646694421768,
+      "confusion_matrix": {
+        "true_negative": 23,
+        "false_positive": 2,
+        "false_negative": 3,
+        "true_positive": 11
+      }
+    },
+    "calibration": {
+      "status": "PASS",
+      "fraction_positive": [
+        0.05,
+        0.25,
+        0.5,
+        0.8461538461538461
+      ],
+      "mean_predicted_probability": [
+        0.1338879182934761,
+        0.3097020536661148,
+        0.43786783516407013,
+        0.7034113911482004
+      ]
+    }
+  },
+  "cross_validation": {
+    "status": "PASS",
+    "n_splits": 5,
+    "folds": [
+      {
+        "threshold": 0.5,
+        "accuracy": 0.5,
+        "precision": 0.4,
+        "recall": 0.6666666666666666,
+        "f1": 0.5,
+        "roc_auc": 0.8,
+        "pr_auc": 0.8333333333333333,
+        "brier_score": 0.21549232304096222,
+        "confusion_matrix": {
+          "true_negative": 2,
+          "false_positive": 3,
+          "false_negative": 1,
+          "true_positive": 2
+        },
+        "fold": 1,
+        "test_samples": 8
+      },
+      {
+        "threshold": 0.5,
+        "accuracy": 0.875,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "roc_auc": 0.8999999999999999,
+        "pr_auc": 0.8666666666666667,
+        "brier_score": 0.1757715344429016,
+        "confusion_matrix": {
+          "true_negative": 5,
+          "false_positive": 0,
+          "false_negative": 1,
+          "true_positive": 2
+        },
+        "fold": 2,
+        "test_samples": 8
+      },
+      {
+        "threshold": 0.5,
+        "accuracy": 0.875,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier_score": 0.13406704366207123,
+        "confusion_matrix": {
+          "true_negative": 5,
+          "false_positive": 0,
+          "false_negative": 1,
+          "true_positive": 2
+        },
+        "fold": 3,
+        "test_samples": 8
+      },
+      {
+        "threshold": 0.5,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier_score": 0.11051898449659348,
+        "confusion_matrix": {
+          "true_negative": 5,
+          "false_positive": 0,
+          "false_negative": 0,
+          "true_positive": 3
+        },
+        "fold": 4,
+        "test_samples": 8
+      },
+      {
+        "threshold": 0.5,
+        "accuracy": 0.8571428571428571,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "roc_auc": 0.8,
+        "pr_auc": 0.5833333333333333,
+        "brier_score": 0.14216254651546478,
+        "confusion_matrix": {
+          "true_negative": 4,
+          "false_positive": 1,
+          "false_negative": 0,
+          "true_positive": 2
+        },
+        "fold": 5,
+        "test_samples": 7
+      }
+    ],
+    "mean_fold_metrics": {
+      "accuracy": 0.8214285714285714,
+      "precision": 0.8133333333333332,
+      "recall": 0.8,
+      "f1": 0.78,
+      "roc_auc": 0.9,
+      "pr_auc": 0.8566666666666667,
+      "brier_score": 0.15560248643159866
+    },
+    "pooled_out_of_fold_metrics": {
+      "threshold": 0.5,
+      "accuracy": 0.8205128205128205,
+      "precision": 0.7333333333333333,
+      "recall": 0.7857142857142857,
+      "f1": 0.7586206896551724,
+      "roc_auc": 0.8842857142857142,
+      "pr_auc": 0.7546392103560887,
+      "brier_score": 0.15594709953431035,
+      "confusion_matrix": {
+        "true_negative": 21,
+        "false_positive": 4,
+        "false_negative": 3,
+        "true_positive": 11
+      }
+    }
+  },
+  "scientific_cautions": [
+    "Only 39 prototype samples are currently available.",
+    "Background candidates are not confirmed landslide-free observations.",
+    "Perfect validation scores should not be interpreted as production performance.",
+    "Spatial holdout validation is required because nearby locations can be correlated.",
+    "Temporal holdout validation is required when enough dated events are available.",
+    "The model currently does not contain all intended dynamic rainfall features because those source features are unavailable in the fused dataset."
+  ],
+  "database_modified": false
+}

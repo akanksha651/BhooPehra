@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "overall_status": "PASS",
+  "source": "ISRO / NRSC Bhuvan LULC 50K 2015-16",
+  "service": "https://bhuvan-vec2.nrsc.gov.in/bhuvan/wms",
+  "dataset": "Bhuvan LULC 50K 2015-16",
+  "total_records": 39,
+  "positive_records": 14,
+  "background_records": 25,
+  "lulc_available": 39,
+  "lulc_missing": 0,
+  "coverage_percent": 100.0,
+  "positive_lulc_available": 14,
+  "background_lulc_available": 25,
+  "background_states_unresolved": 0,
+  "no_feature": 0,
+  "request_errors": 0,
+  "missing_coordinates": 0,
+  "invalid_coordinates": 0,
+  "normalized_class_counts": {
+    "BARREN_ROCKY": 1,
+    "BUILT_UP": 5,
+    "FOREST": 29,
+    "GRASS_GRAZING": 1,
+    "SNOW_GLACIER": 2,
+    "WATER": 1
+  },
+  "provenance_note": "LULC observations are retrieved from ISRO/NRSC Bhuvan LULC 50K 2015-16 state-specific layers through WMS GetFeatureInfo. Background samples use the state already attached by the BhooPehra negative sampler. No state is guessed from a bounding box.",
+  "background_label_definition": "Records beginning with NEG- or GSI_BACKGROUND_, or explicitly labelled label=0 / BACKGROUND_CANDIDATE, are treated as background records.",
+  "database_modified": false
+}

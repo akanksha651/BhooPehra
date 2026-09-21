@@ -1,0 +1,45 @@
+{
+  "generated_at_utc": "2026-09-08T07:45:33.899393+00:00",
+  "input_file": "data\\gsi\\gsi_training_spatial_validated.json",
+  "output_file": "data\\gsi\\gsi_training_feature_dataset.json",
+  "records": {
+    "total": 39,
+    "positive": 14,
+    "background": 25
+  },
+  "feature_coverage": {
+    "elevation_available": 39,
+    "rainfall_available": 39,
+    "historical_inventory_available": true
+  },
+  "features": {
+    "real": [
+      "elevation_m",
+      "historical_landslide_count",
+      "historical_landslide_density_10km",
+      "nearest_landslide_distance_km",
+      "rainfall_1h",
+      "rainfall_24h",
+      "rainfall_48h",
+      "rainfall_72h",
+      "antecedent_rainfall",
+      "soil_moisture",
+      "rainfall_trigger"
+    ],
+    "not_yet_attached": [
+      "slope",
+      "aspect",
+      "curvature",
+      "geology",
+      "land_cover",
+      "distance_to_road",
+      "road_importance"
+    ]
+  },
+  "warnings": [
+    "This dataset is not ready for final ML training.",
+    "Background labels remain unverified.",
+    "Slope/aspect require an actual DEM raster rather than a single-point elevation lookup.",
+    "Geology and land-cover require spatial source layers before attachment."
+  ]
+}

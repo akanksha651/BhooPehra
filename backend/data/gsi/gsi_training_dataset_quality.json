@@ -1,0 +1,43 @@
+{
+  "generated_at_utc": "2026-09-07T17:40:19.831776+00:00",
+  "source": "GSI",
+  "database_operation": "READ_ONLY",
+  "input": {
+    "spatial_events": 25,
+    "exact_date_events": 23,
+    "missing_exact_date_events": 2
+  },
+  "clustering": {
+    "total_spatial_events": 25,
+    "total_clusters": 16,
+    "multi_event_clusters": 1,
+    "singleton_clusters": 15,
+    "events_in_multi_event_clusters": 10
+  },
+  "positive_dataset": {
+    "positive_candidates": 14,
+    "singleton_positive_candidates": 13,
+    "clustered_positive_candidates": 1
+  },
+  "excluded_records": {
+    "count": 2,
+    "records": [
+      {
+        "event_id": 20,
+        "reason": "missing_exact_occurrence_date",
+        "cluster_id": 15
+      },
+      {
+        "event_id": 21,
+        "reason": "missing_exact_occurrence_date",
+        "cluster_id": 16
+      }
+    ]
+  },
+  "warnings": [
+    "This dataset contains positive-event candidates only.",
+    "Negative/background samples have not been generated.",
+    "Terrain, geology, land-cover and rainfall features have not been attached yet.",
+    "Clustered observations are represented as one episode-level candidate to reduce duplicate positive-label inflation."
+  ]
+}

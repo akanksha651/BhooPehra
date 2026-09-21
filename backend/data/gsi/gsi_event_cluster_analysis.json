@@ -1,0 +1,3366 @@
+{
+  "configuration": {
+    "cluster_distance_km": 5.0,
+    "cluster_time_days": 14,
+    "min_cluster_size": 2
+  },
+  "summary": {
+    "total_spatial_events": 25,
+    "total_clusters": 16,
+    "multi_event_clusters": 1,
+    "singleton_clusters": 15,
+    "events_in_multi_event_clusters": 10
+  },
+  "clusters": [
+    {
+      "cluster_id": 1,
+      "size": 10,
+      "states": [
+        "Sikkim"
+      ],
+      "districts": [
+        "East District"
+      ],
+      "centroid": {
+        "latitude": 27.3533333,
+        "longitude": 88.6165667
+      },
+      "date_span_days": 2,
+      "max_pairwise_distance_km": 3.516,
+      "events": [
+        {
+          "id": 6,
+          "source_record_id": "GSI-SK-2021-SWASTIK-II",
+          "source": "GSI",
+          "state": "Sikkim",
+          "district": "East District",
+          "slide_name": "Swastik-II",
+          "locality": "NH-10, Gangtok",
+          "occurrence_date": "2021-06-06",
+          "latitude": 27.3533333333,
+          "longitude": 88.6166666667,
+          "verification_status": "GSI_VERIFIED"
+        },
+        {
+          "id": 22,
+          "source_record_id": "44",
+          "source": "GSI",
+          "state": "Sikkim",
+          "district": "East District",
+          "slide_name": "Landslide at Upper Burtuk, Gangtok, East District, Sikkim (6th June 2021)",
+          "locality": "Upper Burtuk",
+          "occurrence_date": "2021-06-06",
+          "latitude": 27.358,
+          "longitude": 88.621,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        },
+        {
+          "id": 24,
+          "source_record_id": "46",
+          "source": "GSI",
+          "state": "Sikkim",
+          "district": "East District",
+          "slide_name": "Landslide at Tashi View Point-I, Gangtok, East District, Sikkim (6th June 2021)",
+          "locality": "Tashi View Point-I",
+          "occurrence_date": "2021-06-06",
+          "latitude": 27.37,
+          "longitude": 88.616,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        },
+        {
+          "id": 26,
+          "source_record_id": "48",
+          "source": "GSI",
+          "state": "Sikkim",
+          "district": "East District",
+          "slide_name": "Landslide at Swastik-II, Gangtok, East District, Sikkim (6th June 2021)",
+          "locality": "Swastik-II",
+          "occurrence_date": "2021-06-06",
+          "latitude": 27.353,
+          "longitude": 88.617,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        },
+        {
+          "id": 28,
+          "source_record_id": "50",
+          "source": "GSI",
+          "state": "Sikkim",
+          "district": "East District",
+          "slide_name": "Landslide at Lower Burtuk, Gangtok, East District, Sikkim (6th June 2021)",
+          "locality": "Lower Burtuk",
+          "occurrence_date": "2021-06-06",
+          "latitude": 27.358,
+          "longitude": 88.62,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        },
+        {
+          "id": 29,
+          "source_record_id": "51",
+          "source": "GSI",
+          "state": "Sikkim",
+          "district": "East District",
+          "slide_name": "Landslide at Development area-I Gangtok, East District, Sikkim (6th June 2021)",
+          "locality": "Development area-I",
+          "occurrence_date": "2021-06-06",
+          "latitude": 27.339,
+          "longitude": 88.609,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        },
+        {
+          "id": 30,
+          "source_record_id": "52",
+          "source": "GSI",
+          "state": "Sikkim",
+          "district": "East District",
+          "slide_name": "Landslide at Bhojogari- I, Gangtok, East District, Sikkim (6th June 2021)",
+          "locality": "Bhojogari- I",
+          "occurrence_date": "2021-06-06",
+          "latitude": 27.364,
+          "longitude": 88.621,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        },
+        {
+          "id": 27,
+          "source_record_id": "49",
+          "source": "GSI",
+          "state": "Sikkim",
+          "district": "East District",
+          "slide_name": "Landslide at Swastik Market, Gangtok, East District, Sikkim (7th June 2021)",
+          "locality": "Swastik Market",
+          "occurrence_date": "2021-06-07",
+          "latitude": 27.357,
+          "longitude": 88.618,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        },
+        {
+          "id": 23,
+          "source_record_id": "45",
+          "source": "GSI",
+          "state": "Sikkim",
+          "district": "East District",
+          "slide_name": "Landslides at Tibetan Jhora, Gangtok, East District, Sikkim (8th June 2021)",
+          "locality": "Tibetan Jhora",
+          "occurrence_date": "2021-06-08",
+          "latitude": 27.342,
+          "longitude": 88.607,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        },
+        {
+          "id": 25,
+          "source_record_id": "47",
+          "source": "GSI",
+          "state": "Sikkim",
+          "district": "East District",
+          "slide_name": "Landslide at Tamang Gompa , Gangtok, East District, Sikkim (8th June 2021)",
+          "locality": "Tamang Gompa",
+          "occurrence_date": "2021-06-08",
+          "latitude": 27.339,
+          "longitude": 88.62,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        }
+      ],
+      "interpretation": "POSSIBLE_MULTI_OBSERVATION_EPISODE",
+      "ml_recommendation": "REVIEW_BEFORE_INDEPENDENT_POSITIVE"
+    },
+    {
+      "cluster_id": 2,
+      "size": 1,
+      "states": [
+        "Sikkim"
+      ],
+      "districts": [
+        "East District"
+      ],
+      "centroid": {
+        "latitude": 27.3288889,
+        "longitude": 88.6077778
+      },
+      "date_span_days": 0,
+      "max_pairwise_distance_km": 0.0,
+      "events": [
+        {
+          "id": 5,
+          "source_record_id": "GSI-SK-2021-INDIRA-BYPASS-I",
+          "source": "GSI",
+          "state": "Sikkim",
+          "district": "East District",
+          "slide_name": "Indira Bye Pass-I",
+          "locality": "Indira Bye Pass Road, Gangtok",
+          "occurrence_date": "2021-05-18",
+          "latitude": 27.3288888889,
+          "longitude": 88.6077777778,
+          "verification_status": "GSI_VERIFIED"
+        }
+      ],
+      "interpretation": "SINGLETON_EVENT",
+      "ml_recommendation": "INDIVIDUAL_POSITIVE_CANDIDATE"
+    },
+    {
+      "cluster_id": 3,
+      "size": 1,
+      "states": [
+        "Arunachal Pradesh"
+      ],
+      "districts": [
+        "Papum Pare"
+      ],
+      "centroid": {
+        "latitude": 27.1346944,
+        "longitude": 93.7434722
+      },
+      "date_span_days": 0,
+      "max_pairwise_distance_km": 0.0,
+      "events": [
+        {
+          "id": 7,
+          "source_record_id": "GSI-AR-2020-TIGDO",
+          "source": "GSI",
+          "state": "Arunachal Pradesh",
+          "district": "Papum Pare",
+          "slide_name": "Tigdo Slide",
+          "locality": "Yupia-Potin Road, about 4 km from Doimukh town",
+          "occurrence_date": "2020-07-10",
+          "latitude": 27.1346944444,
+          "longitude": 93.7434722222,
+          "verification_status": "GSI_VERIFIED"
+        }
+      ],
+      "interpretation": "SINGLETON_EVENT",
+      "ml_recommendation": "INDIVIDUAL_POSITIVE_CANDIDATE"
+    },
+    {
+      "cluster_id": 4,
+      "size": 1,
+      "states": [
+        "Mizoram"
+      ],
+      "districts": [
+        "Aizawl District"
+      ],
+      "centroid": {
+        "latitude": 23.7415083,
+        "longitude": 92.7078583
+      },
+      "date_span_days": 0,
+      "max_pairwise_distance_km": 0.0,
+      "events": [
+        {
+          "id": 9,
+          "source_record_id": "3",
+          "source": "GSI",
+          "state": "Mizoram",
+          "district": "Aizawl District",
+          "slide_name": "Landslide at Vaivakawn, Aizwal District, Mizoram on 09th June 2023",
+          "locality": "Vaivakawn",
+          "occurrence_date": "2023-06-09",
+          "latitude": 23.7415083,
+          "longitude": 92.7078583,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        }
+      ],
+      "interpretation": "SINGLETON_EVENT",
+      "ml_recommendation": "INDIVIDUAL_POSITIVE_CANDIDATE"
+    },
+    {
+      "cluster_id": 5,
+      "size": 1,
+      "states": [
+        "Meghalaya"
+      ],
+      "districts": [
+        "West Khasi Hills District"
+      ],
+      "centroid": {
+        "latitude": 25.5290139,
+        "longitude": 91.2618861
+      },
+      "date_span_days": 0,
+      "max_pairwise_distance_km": 0.0,
+      "events": [
+        {
+          "id": 10,
+          "source_record_id": "4",
+          "source": "GSI",
+          "state": "Meghalaya",
+          "district": "West Khasi Hills District",
+          "slide_name": "Landslide at Pyndengrei Village, West Khasi Hills District, Meghalaya on 17th June 2023",
+          "locality": "Pyndengrei Village",
+          "occurrence_date": "2023-06-17",
+          "latitude": 25.5290139,
+          "longitude": 91.2618861,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        }
+      ],
+      "interpretation": "SINGLETON_EVENT",
+      "ml_recommendation": "INDIVIDUAL_POSITIVE_CANDIDATE"
+    },
+    {
+      "cluster_id": 6,
+      "size": 1,
+      "states": [
+        "Assam"
+      ],
+      "districts": [
+        "Kamrup Metro District"
+      ],
+      "centroid": {
+        "latitude": 26.1505375,
+        "longitude": 91.7279814
+      },
+      "date_span_days": 0,
+      "max_pairwise_distance_km": 0.0,
+      "events": [
+        {
+          "id": 11,
+          "source_record_id": "5",
+          "source": "GSI",
+          "state": "Assam",
+          "district": "Kamrup Metro District",
+          "slide_name": "Landslide at Dhirenpara, Fatasil hill, Kamrup Metro District, Assam on 17th June 2023",
+          "locality": "Dhirenpara",
+          "occurrence_date": "2023-06-17",
+          "latitude": 26.1505375,
+          "longitude": 91.7279814,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        }
+      ],
+      "interpretation": "SINGLETON_EVENT",
+      "ml_recommendation": "INDIVIDUAL_POSITIVE_CANDIDATE"
+    },
+    {
+      "cluster_id": 7,
+      "size": 1,
+      "states": [
+        "Nagaland"
+      ],
+      "districts": [
+        "Dimapur District"
+      ],
+      "centroid": {
+        "latitude": 25.782,
+        "longitude": 93.802
+      },
+      "date_span_days": 0,
+      "max_pairwise_distance_km": 0.0,
+      "events": [
+        {
+          "id": 12,
+          "source_record_id": "25",
+          "source": "GSI",
+          "state": "Nagaland",
+          "district": "Dimapur District",
+          "slide_name": "Landslide between Chumukedima-Ghaspani along NH 29, Dimapur, Nagaland (8th Sept 2021)",
+          "locality": "NH 29",
+          "occurrence_date": "2021-09-08",
+          "latitude": 25.782,
+          "longitude": 93.802,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        }
+      ],
+      "interpretation": "SINGLETON_EVENT",
+      "ml_recommendation": "INDIVIDUAL_POSITIVE_CANDIDATE"
+    },
+    {
+      "cluster_id": 8,
+      "size": 1,
+      "states": [
+        "Meghalaya"
+      ],
+      "districts": [
+        "West Garo Hills District"
+      ],
+      "centroid": {
+        "latitude": 25.3816333,
+        "longitude": 90.0603389
+      },
+      "date_span_days": 0,
+      "max_pairwise_distance_km": 0.0,
+      "events": [
+        {
+          "id": 13,
+          "source_record_id": "11",
+          "source": "GSI",
+          "state": "Meghalaya",
+          "district": "West Garo Hills District",
+          "slide_name": "Landslide at Jibalgre, West Garo Hills District, Meghalaya on 9th June 2022",
+          "locality": "Jibalgre",
+          "occurrence_date": "2022-06-09",
+          "latitude": 25.3816333,
+          "longitude": 90.0603389,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        }
+      ],
+      "interpretation": "SINGLETON_EVENT",
+      "ml_recommendation": "INDIVIDUAL_POSITIVE_CANDIDATE"
+    },
+    {
+      "cluster_id": 9,
+      "size": 1,
+      "states": [
+        "Meghalaya"
+      ],
+      "districts": [
+        "East Jaintia Hills District"
+      ],
+      "centroid": {
+        "latitude": 25.1640056,
+        "longitude": 92.3870278
+      },
+      "date_span_days": 0,
+      "max_pairwise_distance_km": 0.0,
+      "events": [
+        {
+          "id": 14,
+          "source_record_id": "13",
+          "source": "GSI",
+          "state": "Meghalaya",
+          "district": "East Jaintia Hills District",
+          "slide_name": "Landslide at Lumshnong, East Jaintia Hills District, Meghalaya on 15th June 2022",
+          "locality": "Lumshnong",
+          "occurrence_date": "2022-06-15",
+          "latitude": 25.1640056,
+          "longitude": 92.3870278,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        }
+      ],
+      "interpretation": "SINGLETON_EVENT",
+      "ml_recommendation": "INDIVIDUAL_POSITIVE_CANDIDATE"
+    },
+    {
+      "cluster_id": 10,
+      "size": 1,
+      "states": [
+        "Meghalaya"
+      ],
+      "districts": [
+        "South Garo Hills District"
+      ],
+      "centroid": {
+        "latitude": 25.3610333,
+        "longitude": 90.6470083
+      },
+      "date_span_days": 0,
+      "max_pairwise_distance_km": 0.0,
+      "events": [
+        {
+          "id": 15,
+          "source_record_id": "14",
+          "source": "GSI",
+          "state": "Meghalaya",
+          "district": "South Garo Hills District",
+          "slide_name": "Landslide at Siju, South Garo Hills District, Meghalaya on 17th June 2022",
+          "locality": "Siju",
+          "occurrence_date": "2022-06-17",
+          "latitude": 25.3610333,
+          "longitude": 90.6470083,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        }
+      ],
+      "interpretation": "SINGLETON_EVENT",
+      "ml_recommendation": "INDIVIDUAL_POSITIVE_CANDIDATE"
+    },
+    {
+      "cluster_id": 11,
+      "size": 1,
+      "states": [
+        "Meghalaya"
+      ],
+      "districts": [
+        "South Garo Hills District"
+      ],
+      "centroid": {
+        "latitude": 25.2127389,
+        "longitude": 90.6321611
+      },
+      "date_span_days": 0,
+      "max_pairwise_distance_km": 0.0,
+      "events": [
+        {
+          "id": 16,
+          "source_record_id": "15",
+          "source": "GSI",
+          "state": "Meghalaya",
+          "district": "South Garo Hills District",
+          "slide_name": "Landslide at Baghmara, South Garo Hills District, Meghalaya on 17th June 2022",
+          "locality": "Baghmara",
+          "occurrence_date": "2022-06-17",
+          "latitude": 25.2127389,
+          "longitude": 90.6321611,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        }
+      ],
+      "interpretation": "SINGLETON_EVENT",
+      "ml_recommendation": "INDIVIDUAL_POSITIVE_CANDIDATE"
+    },
+    {
+      "cluster_id": 12,
+      "size": 1,
+      "states": [
+        "Meghalaya"
+      ],
+      "districts": [
+        "East Khasi Hills District"
+      ],
+      "centroid": {
+        "latitude": 25.295,
+        "longitude": 91.932
+      },
+      "date_span_days": 0,
+      "max_pairwise_distance_km": 0.0,
+      "events": [
+        {
+          "id": 17,
+          "source_record_id": "20",
+          "source": "GSI",
+          "state": "Meghalaya",
+          "district": "East Khasi Hills District",
+          "slide_name": "Landslide at Saitbakon, Pynursia Area Along Shillong- Dawki Road, East Khasi Hills District, Meghalaya (4th April 2022)",
+          "locality": "Saitbakon, Pynursia Area Along Shillong- Dawki Road",
+          "occurrence_date": "2022-04-04",
+          "latitude": 25.295,
+          "longitude": 91.932,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        }
+      ],
+      "interpretation": "SINGLETON_EVENT",
+      "ml_recommendation": "INDIVIDUAL_POSITIVE_CANDIDATE"
+    },
+    {
+      "cluster_id": 13,
+      "size": 1,
+      "states": [
+        "Meghalaya"
+      ],
+      "districts": [
+        "East Khasi Hills District"
+      ],
+      "centroid": {
+        "latitude": 25.358,
+        "longitude": 91.972
+      },
+      "date_span_days": 0,
+      "max_pairwise_distance_km": 0.0,
+      "events": [
+        {
+          "id": 18,
+          "source_record_id": "21",
+          "source": "GSI",
+          "state": "Meghalaya",
+          "district": "East Khasi Hills District",
+          "slide_name": "Landslide at Umblai and Lynshing Village, East Khasi Hills District, Meghalaya (4th April 2022)",
+          "locality": "Umblai and Lynshing Village",
+          "occurrence_date": "2022-04-04",
+          "latitude": 25.358,
+          "longitude": 91.972,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        }
+      ],
+      "interpretation": "SINGLETON_EVENT",
+      "ml_recommendation": "INDIVIDUAL_POSITIVE_CANDIDATE"
+    },
+    {
+      "cluster_id": 14,
+      "size": 1,
+      "states": [
+        "Nagaland"
+      ],
+      "districts": [
+        "Wokha District"
+      ],
+      "centroid": {
+        "latitude": 26.107,
+        "longitude": 94.253
+      },
+      "date_span_days": 0,
+      "max_pairwise_distance_km": 0.0,
+      "events": [
+        {
+          "id": 19,
+          "source_record_id": "24",
+          "source": "GSI",
+          "state": "Nagaland",
+          "district": "Wokha District",
+          "slide_name": "Landslide, near Tourist Lodge colony under Wokha town, Wokha District, Nagaland (18th Sept 2021)",
+          "locality": "Tourist Lodge colony",
+          "occurrence_date": "2021-09-18",
+          "latitude": 26.107,
+          "longitude": 94.253,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        }
+      ],
+      "interpretation": "SINGLETON_EVENT",
+      "ml_recommendation": "INDIVIDUAL_POSITIVE_CANDIDATE"
+    },
+    {
+      "cluster_id": 15,
+      "size": 1,
+      "states": [
+        "Meghalaya"
+      ],
+      "districts": [
+        "East Khasi Hills District"
+      ],
+      "centroid": {
+        "latitude": 25.65,
+        "longitude": 91.899
+      },
+      "date_span_days": null,
+      "max_pairwise_distance_km": 0.0,
+      "events": [
+        {
+          "id": 20,
+          "source_record_id": "26",
+          "source": "GSI",
+          "state": "Meghalaya",
+          "district": "East Khasi Hills District",
+          "slide_name": "Landslides near Umiam view point along NH-40, East Khasi hills district, Meghalaya (Sept 2021)",
+          "locality": "Umiam view point",
+          "occurrence_date": null,
+          "latitude": 25.65,
+          "longitude": 91.899,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        }
+      ],
+      "interpretation": "SINGLETON_EVENT",
+      "ml_recommendation": "INDIVIDUAL_POSITIVE_CANDIDATE"
+    },
+    {
+      "cluster_id": 16,
+      "size": 1,
+      "states": [
+        "Meghalaya"
+      ],
+      "districts": [
+        "East Khasi Hills District"
+      ],
+      "centroid": {
+        "latitude": 25.51,
+        "longitude": 91.704
+      },
+      "date_span_days": null,
+      "max_pairwise_distance_km": 0.0,
+      "events": [
+        {
+          "id": 21,
+          "source_record_id": "27",
+          "source": "GSI",
+          "state": "Meghalaya",
+          "district": "East Khasi Hills District",
+          "slide_name": "Landslide at North-West of Sohiong village along NH-44E (by pass road), East Khasi hills district, Meghalaya (Sept 2021)",
+          "locality": "Sohiong village",
+          "occurrence_date": null,
+          "latitude": 25.51,
+          "longitude": 91.704,
+          "verification_status": "GSI_REPORTED_SPATIAL"
+        }
+      ],
+      "interpretation": "SINGLETON_EVENT",
+      "ml_recommendation": "INDIVIDUAL_POSITIVE_CANDIDATE"
+    }
+  ],
+  "pairwise_diagnostics": [
+    {
+      "event_a_id": 7,
+      "event_b_id": 5,
+      "distance_km": 508.192,
+      "date_gap_days": 312,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 6,
+      "distance_km": 507.381,
+      "date_gap_days": 331,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 22,
+      "distance_km": 506.968,
+      "date_gap_days": 331,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 24,
+      "distance_km": 507.501,
+      "date_gap_days": 331,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 26,
+      "distance_km": 507.347,
+      "date_gap_days": 331,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 28,
+      "distance_km": 507.066,
+      "date_gap_days": 331,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 29,
+      "distance_km": 508.097,
+      "date_gap_days": 331,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 30,
+      "distance_km": 506.987,
+      "date_gap_days": 331,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 27,
+      "distance_km": 507.261,
+      "date_gap_days": 332,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 23,
+      "distance_km": 508.303,
+      "date_gap_days": 333,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 25,
+      "distance_km": 507.011,
+      "date_gap_days": 333,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 12,
+      "distance_km": 150.526,
+      "date_gap_days": 425,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 19,
+      "distance_km": 124.996,
+      "date_gap_days": 435,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 17,
+      "distance_km": 272.942,
+      "date_gap_days": 633,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 18,
+      "distance_km": 265.024,
+      "date_gap_days": 633,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 13,
+      "distance_km": 415.776,
+      "date_gap_days": 699,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 14,
+      "distance_km": 257.577,
+      "date_gap_days": 705,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 15,
+      "distance_km": 366.391,
+      "date_gap_days": 707,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 16,
+      "distance_km": 376.902,
+      "date_gap_days": 707,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 9,
+      "distance_km": 391.367,
+      "date_gap_days": 1064,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 10,
+      "distance_km": 305.009,
+      "date_gap_days": 1072,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 11,
+      "distance_km": 228.254,
+      "date_gap_days": 1072,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 20,
+      "distance_km": 246.99,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 7,
+      "event_b_id": 21,
+      "distance_km": 271.935,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 6,
+      "distance_km": 2.856,
+      "date_gap_days": 19,
+      "spatial_match": true,
+      "temporal_match": false,
+      "reason": "temporal_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 22,
+      "distance_km": 3.491,
+      "date_gap_days": 19,
+      "spatial_match": true,
+      "temporal_match": false,
+      "reason": "temporal_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 24,
+      "distance_km": 4.643,
+      "date_gap_days": 19,
+      "spatial_match": true,
+      "temporal_match": false,
+      "reason": "temporal_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 26,
+      "distance_km": 2.832,
+      "date_gap_days": 19,
+      "spatial_match": true,
+      "temporal_match": false,
+      "reason": "temporal_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 28,
+      "distance_km": 3.455,
+      "date_gap_days": 19,
+      "spatial_match": true,
+      "temporal_match": false,
+      "reason": "temporal_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 29,
+      "distance_km": 1.131,
+      "date_gap_days": 19,
+      "spatial_match": true,
+      "temporal_match": false,
+      "reason": "temporal_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 30,
+      "distance_km": 4.117,
+      "date_gap_days": 19,
+      "spatial_match": true,
+      "temporal_match": false,
+      "reason": "temporal_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 27,
+      "distance_km": 3.285,
+      "date_gap_days": 20,
+      "spatial_match": true,
+      "temporal_match": false,
+      "reason": "temporal_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 23,
+      "distance_km": 1.46,
+      "date_gap_days": 21,
+      "spatial_match": true,
+      "temporal_match": false,
+      "reason": "temporal_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 25,
+      "distance_km": 1.65,
+      "date_gap_days": 21,
+      "spatial_match": true,
+      "temporal_match": false,
+      "reason": "temporal_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 12,
+      "distance_km": 544.461,
+      "date_gap_days": 113,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 19,
+      "distance_km": 576.864,
+      "date_gap_days": 123,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 17,
+      "distance_km": 401.134,
+      "date_gap_days": 321,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 18,
+      "distance_km": 400.482,
+      "date_gap_days": 321,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 13,
+      "distance_km": 260.434,
+      "date_gap_days": 387,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 14,
+      "distance_km": 447.178,
+      "date_gap_days": 393,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 15,
+      "distance_km": 298.602,
+      "date_gap_days": 395,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 16,
+      "distance_km": 310.006,
+      "date_gap_days": 395,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 9,
+      "distance_km": 572.926,
+      "date_gap_days": 752,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 10,
+      "distance_km": 331.491,
+      "date_gap_days": 760,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 11,
+      "distance_km": 336.397,
+      "date_gap_days": 760,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 20,
+      "distance_km": 376.987,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 5,
+      "event_b_id": 21,
+      "distance_km": 368.718,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 22,
+      "distance_km": 0.673,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 24,
+      "distance_km": 1.854,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 26,
+      "distance_km": 0.05,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 28,
+      "distance_km": 0.615,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 29,
+      "distance_km": 1.765,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 30,
+      "distance_km": 1.261,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 27,
+      "distance_km": 0.428,
+      "date_gap_days": 1,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 23,
+      "distance_km": 1.581,
+      "date_gap_days": 2,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 25,
+      "distance_km": 1.627,
+      "date_gap_days": 2,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 12,
+      "distance_km": 544.435,
+      "date_gap_days": 94,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 19,
+      "distance_km": 576.594,
+      "date_gap_days": 104,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 17,
+      "distance_km": 401.915,
+      "date_gap_days": 302,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 18,
+      "distance_km": 401.208,
+      "date_gap_days": 302,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 13,
+      "distance_km": 262.203,
+      "date_gap_days": 368,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 14,
+      "distance_km": 447.869,
+      "date_gap_days": 374,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 15,
+      "distance_km": 299.987,
+      "date_gap_days": 376,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 16,
+      "distance_km": 311.488,
+      "date_gap_days": 376,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 9,
+      "distance_km": 574.153,
+      "date_gap_days": 733,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 10,
+      "distance_km": 332.415,
+      "date_gap_days": 741,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 11,
+      "distance_km": 336.624,
+      "date_gap_days": 741,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 20,
+      "distance_km": 377.544,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 6,
+      "event_b_id": 21,
+      "distance_km": 369.452,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 24,
+      "distance_km": 1.423,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 26,
+      "distance_km": 0.682,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 28,
+      "distance_km": 0.099,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 29,
+      "distance_km": 2.422,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 30,
+      "distance_km": 0.667,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 27,
+      "distance_km": 0.316,
+      "date_gap_days": 1,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 23,
+      "distance_km": 2.253,
+      "date_gap_days": 2,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 25,
+      "distance_km": 2.115,
+      "date_gap_days": 2,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 12,
+      "distance_km": 544.184,
+      "date_gap_days": 94,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 19,
+      "distance_km": 576.29,
+      "date_gap_days": 104,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 17,
+      "distance_km": 401.85,
+      "date_gap_days": 302,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 18,
+      "distance_km": 401.13,
+      "date_gap_days": 302,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 13,
+      "distance_km": 262.399,
+      "date_gap_days": 368,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 14,
+      "distance_km": 447.783,
+      "date_gap_days": 374,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 15,
+      "distance_km": 300.077,
+      "date_gap_days": 376,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 16,
+      "distance_km": 311.604,
+      "date_gap_days": 376,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 9,
+      "distance_km": 574.2,
+      "date_gap_days": 733,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 10,
+      "distance_km": 332.386,
+      "date_gap_days": 741,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 11,
+      "distance_km": 336.43,
+      "date_gap_days": 741,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 20,
+      "distance_km": 377.426,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 22,
+      "event_b_id": 21,
+      "distance_km": 369.376,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 26,
+      "distance_km": 1.893,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 28,
+      "distance_km": 1.392,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 29,
+      "distance_km": 3.516,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 30,
+      "distance_km": 0.83,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 27,
+      "distance_km": 1.459,
+      "date_gap_days": 1,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 23,
+      "distance_km": 3.238,
+      "date_gap_days": 2,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 25,
+      "distance_km": 3.47,
+      "date_gap_days": 2,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 12,
+      "distance_km": 545.06,
+      "date_gap_days": 94,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 19,
+      "distance_km": 577.066,
+      "date_gap_days": 104,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 17,
+      "distance_km": 403.007,
+      "date_gap_days": 302,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 18,
+      "distance_km": 402.27,
+      "date_gap_days": 302,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 13,
+      "distance_km": 263.785,
+      "date_gap_days": 368,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 14,
+      "distance_km": 448.912,
+      "date_gap_days": 374,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 15,
+      "distance_km": 301.393,
+      "date_gap_days": 376,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 16,
+      "distance_km": 312.939,
+      "date_gap_days": 376,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 9,
+      "distance_km": 575.478,
+      "date_gap_days": 733,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 10,
+      "distance_km": 333.586,
+      "date_gap_days": 741,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 11,
+      "distance_km": 337.405,
+      "date_gap_days": 741,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 20,
+      "distance_km": 378.513,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 24,
+      "event_b_id": 21,
+      "distance_km": 370.52,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 28,
+      "distance_km": 0.63,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 29,
+      "distance_km": 1.746,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 30,
+      "distance_km": 1.285,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 27,
+      "distance_km": 0.456,
+      "date_gap_days": 1,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 23,
+      "distance_km": 1.572,
+      "date_gap_days": 2,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 25,
+      "distance_km": 1.585,
+      "date_gap_days": 2,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 12,
+      "distance_km": 544.393,
+      "date_gap_days": 94,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 19,
+      "distance_km": 576.554,
+      "date_gap_days": 104,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 17,
+      "distance_km": 401.867,
+      "date_gap_days": 302,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 18,
+      "distance_km": 401.16,
+      "date_gap_days": 302,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 13,
+      "distance_km": 262.154,
+      "date_gap_days": 368,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 14,
+      "distance_km": 447.822,
+      "date_gap_days": 374,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 15,
+      "distance_km": 299.938,
+      "date_gap_days": 376,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 16,
+      "distance_km": 311.438,
+      "date_gap_days": 376,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 9,
+      "distance_km": 574.104,
+      "date_gap_days": 733,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 10,
+      "distance_km": 332.366,
+      "date_gap_days": 741,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 11,
+      "distance_km": 336.58,
+      "date_gap_days": 741,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 20,
+      "distance_km": 377.497,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 26,
+      "event_b_id": 21,
+      "distance_km": 369.404,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 28,
+      "event_b_id": 29,
+      "distance_km": 2.376,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 28,
+      "event_b_id": 30,
+      "distance_km": 0.674,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 28,
+      "event_b_id": 27,
+      "distance_km": 0.227,
+      "date_gap_days": 1,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 28,
+      "event_b_id": 23,
+      "distance_km": 2.194,
+      "date_gap_days": 2,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 28,
+      "event_b_id": 25,
+      "distance_km": 2.113,
+      "date_gap_days": 2,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 28,
+      "event_b_id": 12,
+      "distance_km": 544.278,
+      "date_gap_days": 94,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 28,
+      "event_b_id": 19,
+      "distance_km": 576.386,
+      "date_gap_days": 104,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 28,
+      "event_b_id": 17,
+      "distance_km": 401.932,
+      "date_gap_days": 302,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 28,
+      "event_b_id": 18,
+      "distance_km": 401.213,
+      "date_gap_days": 302,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 28,
+      "event_b_id": 13,
+      "distance_km": 262.454,
+      "date_gap_days": 368,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 28,
+      "event_b_id": 14,
+      "distance_km": 447.866,
+      "date_gap_days": 374,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 28,
+      "event_b_id": 15,
+      "distance_km": 300.144,
+      "date_gap_days": 376,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 28,
+      "event_b_id": 16,
+      "distance_km": 311.668,
+      "date_gap_days": 376,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 28,
+      "event_b_id": 9,
+      "distance_km": 574.272,
+      "date_gap_days": 733,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 28,
+      "event_b_id": 10,
+      "distance_km": 332.465,
+      "date_gap_days": 741,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 28,
+      "event_b_id": 11,
+      "distance_km": 336.522,
+      "date_gap_days": 741,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 28,
+      "event_b_id": 20,
+      "distance_km": 377.512,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 28,
+      "event_b_id": 21,
+      "distance_km": 369.459,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 29,
+      "event_b_id": 30,
+      "distance_km": 3.022,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 29,
+      "event_b_id": 27,
+      "distance_km": 2.19,
+      "date_gap_days": 1,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 29,
+      "event_b_id": 23,
+      "distance_km": 0.388,
+      "date_gap_days": 2,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 29,
+      "event_b_id": 25,
+      "distance_km": 1.087,
+      "date_gap_days": 2,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 29,
+      "event_b_id": 12,
+      "distance_km": 544.68,
+      "date_gap_days": 94,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 29,
+      "event_b_id": 19,
+      "distance_km": 576.987,
+      "date_gap_days": 104,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 29,
+      "event_b_id": 17,
+      "distance_km": 401.656,
+      "date_gap_days": 302,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 29,
+      "event_b_id": 18,
+      "distance_km": 400.984,
+      "date_gap_days": 302,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 29,
+      "event_b_id": 13,
+      "distance_km": 261.299,
+      "date_gap_days": 368,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 29,
+      "event_b_id": 14,
+      "distance_km": 447.668,
+      "date_gap_days": 374,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 29,
+      "event_b_id": 15,
+      "distance_km": 299.338,
+      "date_gap_days": 376,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 29,
+      "event_b_id": 16,
+      "distance_km": 310.775,
+      "date_gap_days": 376,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 29,
+      "event_b_id": 9,
+      "distance_km": 573.608,
+      "date_gap_days": 733,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 29,
+      "event_b_id": 10,
+      "distance_km": 332.065,
+      "date_gap_days": 741,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 29,
+      "event_b_id": 11,
+      "distance_km": 336.712,
+      "date_gap_days": 741,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 29,
+      "event_b_id": 20,
+      "distance_km": 377.426,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 29,
+      "event_b_id": 21,
+      "distance_km": 369.223,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 30,
+      "event_b_id": 27,
+      "distance_km": 0.833,
+      "date_gap_days": 1,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 30,
+      "event_b_id": 23,
+      "distance_km": 2.81,
+      "date_gap_days": 2,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 30,
+      "event_b_id": 25,
+      "distance_km": 2.782,
+      "date_gap_days": 2,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 30,
+      "event_b_id": 12,
+      "distance_km": 544.386,
+      "date_gap_days": 94,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 30,
+      "event_b_id": 19,
+      "distance_km": 576.437,
+      "date_gap_days": 104,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 30,
+      "event_b_id": 17,
+      "distance_km": 402.224,
+      "date_gap_days": 302,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 30,
+      "event_b_id": 18,
+      "distance_km": 401.493,
+      "date_gap_days": 302,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 30,
+      "event_b_id": 13,
+      "distance_km": 262.956,
+      "date_gap_days": 368,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 30,
+      "event_b_id": 14,
+      "distance_km": 448.138,
+      "date_gap_days": 374,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 30,
+      "event_b_id": 15,
+      "distance_km": 300.568,
+      "date_gap_days": 376,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 30,
+      "event_b_id": 16,
+      "distance_km": 312.111,
+      "date_gap_days": 376,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 30,
+      "event_b_id": 9,
+      "distance_km": 574.66,
+      "date_gap_days": 733,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 30,
+      "event_b_id": 10,
+      "distance_km": 332.789,
+      "date_gap_days": 741,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 30,
+      "event_b_id": 11,
+      "distance_km": 336.69,
+      "date_gap_days": 741,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 30,
+      "event_b_id": 20,
+      "distance_km": 377.755,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 30,
+      "event_b_id": 21,
+      "distance_km": 369.741,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 27,
+      "event_b_id": 23,
+      "distance_km": 1.991,
+      "date_gap_days": 1,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 27,
+      "event_b_id": 25,
+      "distance_km": 2.011,
+      "date_gap_days": 1,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 27,
+      "event_b_id": 12,
+      "distance_km": 544.433,
+      "date_gap_days": 93,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 27,
+      "event_b_id": 19,
+      "distance_km": 576.555,
+      "date_gap_days": 103,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 27,
+      "event_b_id": 17,
+      "distance_km": 402.033,
+      "date_gap_days": 301,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 27,
+      "event_b_id": 18,
+      "distance_km": 401.318,
+      "date_gap_days": 301,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 27,
+      "event_b_id": 13,
+      "distance_km": 262.47,
+      "date_gap_days": 367,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 27,
+      "event_b_id": 14,
+      "distance_km": 447.974,
+      "date_gap_days": 373,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 27,
+      "event_b_id": 15,
+      "distance_km": 300.197,
+      "date_gap_days": 375,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 27,
+      "event_b_id": 16,
+      "distance_km": 311.712,
+      "date_gap_days": 375,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 27,
+      "event_b_id": 9,
+      "distance_km": 574.338,
+      "date_gap_days": 732,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 27,
+      "event_b_id": 10,
+      "distance_km": 332.555,
+      "date_gap_days": 740,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 27,
+      "event_b_id": 11,
+      "distance_km": 336.661,
+      "date_gap_days": 740,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 27,
+      "event_b_id": 20,
+      "distance_km": 377.629,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 27,
+      "event_b_id": 21,
+      "distance_km": 369.564,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 23,
+      "event_b_id": 25,
+      "distance_km": 1.327,
+      "date_gap_days": 0,
+      "spatial_match": true,
+      "temporal_match": true,
+      "reason": "spatial_and_temporal_match"
+    },
+    {
+      "event_a_id": 23,
+      "event_b_id": 12,
+      "distance_km": 544.968,
+      "date_gap_days": 92,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 23,
+      "event_b_id": 19,
+      "distance_km": 577.252,
+      "date_gap_days": 102,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 23,
+      "event_b_id": 17,
+      "distance_km": 402.005,
+      "date_gap_days": 300,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 23,
+      "event_b_id": 18,
+      "distance_km": 401.33,
+      "date_gap_days": 300,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 23,
+      "event_b_id": 13,
+      "distance_km": 261.686,
+      "date_gap_days": 366,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 23,
+      "event_b_id": 14,
+      "distance_km": 448.012,
+      "date_gap_days": 372,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 23,
+      "event_b_id": 15,
+      "distance_km": 299.717,
+      "date_gap_days": 374,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 23,
+      "event_b_id": 16,
+      "distance_km": 311.157,
+      "date_gap_days": 374,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 23,
+      "event_b_id": 9,
+      "distance_km": 573.981,
+      "date_gap_days": 731,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 23,
+      "event_b_id": 10,
+      "distance_km": 332.422,
+      "date_gap_days": 739,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 23,
+      "event_b_id": 11,
+      "distance_km": 337.022,
+      "date_gap_days": 739,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 23,
+      "event_b_id": 20,
+      "distance_km": 377.761,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 23,
+      "event_b_id": 21,
+      "distance_km": 369.57,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 25,
+      "event_b_id": 12,
+      "distance_km": 543.643,
+      "date_gap_days": 92,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 25,
+      "event_b_id": 19,
+      "distance_km": 575.926,
+      "date_gap_days": 102,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 25,
+      "event_b_id": 17,
+      "distance_km": 400.753,
+      "date_gap_days": 300,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 25,
+      "event_b_id": 18,
+      "distance_km": 400.069,
+      "date_gap_days": 300,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 25,
+      "event_b_id": 13,
+      "distance_km": 260.694,
+      "date_gap_days": 366,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 25,
+      "event_b_id": 14,
+      "distance_km": 446.745,
+      "date_gap_days": 372,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 25,
+      "event_b_id": 15,
+      "distance_km": 298.596,
+      "date_gap_days": 374,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 25,
+      "event_b_id": 16,
+      "distance_km": 310.065,
+      "date_gap_days": 374,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 25,
+      "event_b_id": 9,
+      "distance_km": 572.818,
+      "date_gap_days": 731,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 25,
+      "event_b_id": 10,
+      "distance_km": 331.194,
+      "date_gap_days": 739,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 25,
+      "event_b_id": 11,
+      "distance_km": 335.708,
+      "date_gap_days": 739,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 25,
+      "event_b_id": 20,
+      "distance_km": 376.477,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 25,
+      "event_b_id": 21,
+      "distance_km": 368.31,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 12,
+      "event_b_id": 19,
+      "distance_km": 57.789,
+      "date_gap_days": 10,
+      "spatial_match": false,
+      "temporal_match": true,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 12,
+      "event_b_id": 17,
+      "distance_km": 195.275,
+      "date_gap_days": 208,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 12,
+      "event_b_id": 18,
+      "distance_km": 189.513,
+      "date_gap_days": 208,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 12,
+      "event_b_id": 13,
+      "distance_km": 377.886,
+      "date_gap_days": 274,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 12,
+      "event_b_id": 14,
+      "distance_km": 157.79,
+      "date_gap_days": 280,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 12,
+      "event_b_id": 15,
+      "distance_km": 319.89,
+      "date_gap_days": 282,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 12,
+      "event_b_id": 16,
+      "distance_km": 324.368,
+      "date_gap_days": 282,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 12,
+      "event_b_id": 9,
+      "distance_km": 252.355,
+      "date_gap_days": 639,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 12,
+      "event_b_id": 10,
+      "distance_km": 256.148,
+      "date_gap_days": 647,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 12,
+      "event_b_id": 11,
+      "distance_km": 211.348,
+      "date_gap_days": 647,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 12,
+      "event_b_id": 20,
+      "distance_km": 191.209,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 12,
+      "event_b_id": 21,
+      "distance_km": 212.466,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 19,
+      "event_b_id": 17,
+      "distance_km": 249.459,
+      "date_gap_days": 198,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 19,
+      "event_b_id": 18,
+      "distance_km": 243.184,
+      "date_gap_days": 198,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 19,
+      "event_b_id": 13,
+      "distance_km": 427.582,
+      "date_gap_days": 264,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 19,
+      "event_b_id": 14,
+      "distance_km": 214.442,
+      "date_gap_days": 270,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 19,
+      "event_b_id": 15,
+      "distance_km": 370.587,
+      "date_gap_days": 272,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 19,
+      "event_b_id": 16,
+      "distance_km": 376.273,
+      "date_gap_days": 272,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 19,
+      "event_b_id": 9,
+      "distance_km": 305.706,
+      "date_gap_days": 629,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 19,
+      "event_b_id": 10,
+      "distance_km": 306.21,
+      "date_gap_days": 637,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 19,
+      "event_b_id": 11,
+      "distance_km": 252.119,
+      "date_gap_days": 637,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 19,
+      "event_b_id": 20,
+      "distance_km": 240.921,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 19,
+      "event_b_id": 21,
+      "distance_km": 263.653,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 17,
+      "event_b_id": 18,
+      "distance_km": 8.077,
+      "date_gap_days": 0,
+      "spatial_match": false,
+      "temporal_match": true,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 17,
+      "event_b_id": 13,
+      "distance_km": 188.343,
+      "date_gap_days": 66,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 17,
+      "event_b_id": 14,
+      "distance_km": 48.032,
+      "date_gap_days": 72,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 17,
+      "event_b_id": 15,
+      "distance_km": 129.358,
+      "date_gap_days": 74,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 17,
+      "event_b_id": 16,
+      "distance_km": 131.041,
+      "date_gap_days": 74,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 17,
+      "event_b_id": 9,
+      "distance_km": 189.736,
+      "date_gap_days": 431,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 17,
+      "event_b_id": 10,
+      "distance_km": 72.159,
+      "date_gap_days": 439,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 17,
+      "event_b_id": 11,
+      "distance_km": 97.302,
+      "date_gap_days": 439,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 17,
+      "event_b_id": 20,
+      "distance_km": 39.613,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 17,
+      "event_b_id": 21,
+      "distance_km": 33.106,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 18,
+      "event_b_id": 13,
+      "distance_km": 192.084,
+      "date_gap_days": 66,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 18,
+      "event_b_id": 14,
+      "distance_km": 46.981,
+      "date_gap_days": 72,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 18,
+      "event_b_id": 15,
+      "distance_km": 133.135,
+      "date_gap_days": 74,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 18,
+      "event_b_id": 16,
+      "distance_km": 135.674,
+      "date_gap_days": 74,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 18,
+      "event_b_id": 9,
+      "distance_km": 194.544,
+      "date_gap_days": 431,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 18,
+      "event_b_id": 10,
+      "distance_km": 73.795,
+      "date_gap_days": 439,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 18,
+      "event_b_id": 11,
+      "distance_km": 91.452,
+      "date_gap_days": 439,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 18,
+      "event_b_id": 20,
+      "distance_km": 33.285,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 18,
+      "event_b_id": 21,
+      "distance_km": 31.779,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 13,
+      "event_b_id": 14,
+      "distance_km": 235.198,
+      "date_gap_days": 6,
+      "spatial_match": false,
+      "temporal_match": true,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 13,
+      "event_b_id": 15,
+      "distance_km": 58.987,
+      "date_gap_days": 8,
+      "spatial_match": false,
+      "temporal_match": true,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 13,
+      "event_b_id": 16,
+      "distance_km": 60.476,
+      "date_gap_days": 8,
+      "spatial_match": false,
+      "temporal_match": true,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 13,
+      "event_b_id": 9,
+      "distance_km": 323.947,
+      "date_gap_days": 365,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 13,
+      "event_b_id": 10,
+      "distance_km": 121.743,
+      "date_gap_days": 373,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 13,
+      "event_b_id": 11,
+      "distance_km": 187.608,
+      "date_gap_days": 373,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 13,
+      "event_b_id": 20,
+      "distance_km": 186.905,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 13,
+      "event_b_id": 21,
+      "distance_km": 165.652,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 14,
+      "event_b_id": 15,
+      "distance_km": 176.342,
+      "date_gap_days": 2,
+      "spatial_match": false,
+      "temporal_match": true,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 14,
+      "event_b_id": 16,
+      "distance_km": 176.66,
+      "date_gap_days": 2,
+      "spatial_match": false,
+      "temporal_match": true,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 14,
+      "event_b_id": 9,
+      "distance_km": 161.474,
+      "date_gap_days": 359,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 14,
+      "event_b_id": 10,
+      "distance_km": 120.13,
+      "date_gap_days": 367,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 14,
+      "event_b_id": 11,
+      "distance_km": 128.05,
+      "date_gap_days": 367,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 14,
+      "event_b_id": 20,
+      "distance_km": 72.959,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 14,
+      "event_b_id": 21,
+      "distance_km": 78.69,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 15,
+      "event_b_id": 16,
+      "distance_km": 16.557,
+      "date_gap_days": 0,
+      "spatial_match": false,
+      "temporal_match": true,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 15,
+      "event_b_id": 9,
+      "distance_km": 275.447,
+      "date_gap_days": 357,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 15,
+      "event_b_id": 10,
+      "distance_km": 64.503,
+      "date_gap_days": 365,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 15,
+      "event_b_id": 11,
+      "distance_km": 139.378,
+      "date_gap_days": 365,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 15,
+      "event_b_id": 20,
+      "distance_km": 129.691,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 15,
+      "event_b_id": 21,
+      "distance_km": 107.424,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 16,
+      "event_b_id": 9,
+      "distance_km": 266.242,
+      "date_gap_days": 357,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 16,
+      "event_b_id": 10,
+      "distance_km": 72.386,
+      "date_gap_days": 365,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 16,
+      "event_b_id": 11,
+      "distance_km": 151.434,
+      "date_gap_days": 365,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 16,
+      "event_b_id": 20,
+      "distance_km": 136.19,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 16,
+      "event_b_id": 21,
+      "distance_km": 112.655,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 9,
+      "event_b_id": 10,
+      "distance_km": 246.705,
+      "date_gap_days": 8,
+      "spatial_match": false,
+      "temporal_match": true,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 9,
+      "event_b_id": 11,
+      "distance_km": 285.505,
+      "date_gap_days": 8,
+      "spatial_match": false,
+      "temporal_match": true,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 9,
+      "event_b_id": 20,
+      "distance_km": 227.402,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 9,
+      "event_b_id": 21,
+      "distance_km": 221.281,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 10,
+      "event_b_id": 11,
+      "distance_km": 83.379,
+      "date_gap_days": 0,
+      "spatial_match": false,
+      "temporal_match": true,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 10,
+      "event_b_id": 20,
+      "distance_km": 65.296,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 10,
+      "event_b_id": 21,
+      "distance_km": 44.415,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 11,
+      "event_b_id": 20,
+      "distance_km": 58.227,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 11,
+      "event_b_id": 21,
+      "distance_km": 71.265,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    },
+    {
+      "event_a_id": 20,
+      "event_b_id": 21,
+      "distance_km": 24.997,
+      "date_gap_days": null,
+      "spatial_match": false,
+      "temporal_match": false,
+      "reason": "spatial_threshold_not_met"
+    }
+  ],
+  "status": "success",
+  "database_operation": "READ_ONLY",
+  "message": "GSI event clustering completed. No database records were modified."
+}

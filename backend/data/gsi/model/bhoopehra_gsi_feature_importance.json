@@ -1,0 +1,202 @@
+{
+  "generated_at_utc": "2026-09-08T13:26:00.197962+00:00",
+  "model": "XGBoostClassifier",
+  "dominance_status": "OK",
+  "feature_importance": [
+    {
+      "feature": "road_count_1km",
+      "importance": 0.2847311794757843,
+      "rank": 1
+    },
+    {
+      "feature": "road_length_1km_m",
+      "importance": 0.2501686215400696,
+      "rank": 2
+    },
+    {
+      "feature": "distance_to_road_m",
+      "importance": 0.21798227727413177,
+      "rank": 3
+    },
+    {
+      "feature": "road_density_1km_km_per_km2",
+      "importance": 0.13630369305610657,
+      "rank": 4
+    },
+    {
+      "feature": "road_count_5km",
+      "importance": 0.06720058619976044,
+      "rank": 5
+    },
+    {
+      "feature": "aspect_deg",
+      "importance": 0.039706967771053314,
+      "rank": 6
+    },
+    {
+      "feature": "slope_deg",
+      "importance": 0.0034760357812047005,
+      "rank": 7
+    },
+    {
+      "feature": "road_length_5km_m",
+      "importance": 0.00043060691677965224,
+      "rank": 8
+    },
+    {
+      "feature": "elevation_m",
+      "importance": 0.0,
+      "rank": 9
+    },
+    {
+      "feature": "rainfall_24h_mm",
+      "importance": 0.0,
+      "rank": 10
+    },
+    {
+      "feature": "rainfall_72h_mm",
+      "importance": 0.0,
+      "rank": 11
+    },
+    {
+      "feature": "soil_moisture",
+      "importance": 0.0,
+      "rank": 12
+    },
+    {
+      "feature": "nearest_road_importance",
+      "importance": 0.0,
+      "rank": 13
+    },
+    {
+      "feature": "road_density_5km_km_per_km2",
+      "importance": 0.0,
+      "rank": 14
+    },
+    {
+      "feature": "state__ARUNACHAL PRADESH",
+      "importance": 0.0,
+      "rank": 15
+    },
+    {
+      "feature": "state__ASSAM",
+      "importance": 0.0,
+      "rank": 16
+    },
+    {
+      "feature": "state__MANIPUR",
+      "importance": 0.0,
+      "rank": 17
+    },
+    {
+      "feature": "state__MEGHALAYA",
+      "importance": 0.0,
+      "rank": 18
+    },
+    {
+      "feature": "state__MIZORAM",
+      "importance": 0.0,
+      "rank": 19
+    },
+    {
+      "feature": "state__NAGALAND",
+      "importance": 0.0,
+      "rank": 20
+    },
+    {
+      "feature": "state__SIKKIM",
+      "importance": 0.0,
+      "rank": 21
+    },
+    {
+      "feature": "nearest_road_class__DISTRICT_ROAD",
+      "importance": 0.0,
+      "rank": 22
+    },
+    {
+      "feature": "nearest_road_class__LOCAL_ROAD",
+      "importance": 0.0,
+      "rank": 23
+    },
+    {
+      "feature": "nearest_road_class__MINOR_ACCESS",
+      "importance": 0.0,
+      "rank": 24
+    },
+    {
+      "feature": "nearest_road_class__NATIONAL_HIGHWAY",
+      "importance": 0.0,
+      "rank": 25
+    },
+    {
+      "feature": "nearest_road_class__NONE",
+      "importance": 0.0,
+      "rank": 26
+    },
+    {
+      "feature": "nearest_road_class__STATE_HIGHWAY",
+      "importance": 0.0,
+      "rank": 27
+    },
+    {
+      "feature": "lulc_class__BARREN_ROCKY",
+      "importance": 0.0,
+      "rank": 28
+    },
+    {
+      "feature": "lulc_class__BUILT_UP",
+      "importance": 0.0,
+      "rank": 29
+    },
+    {
+      "feature": "lulc_class__FOREST",
+      "importance": 0.0,
+      "rank": 30
+    },
+    {
+      "feature": "lulc_class__GRASS_GRAZING",
+      "importance": 0.0,
+      "rank": 31
+    },
+    {
+      "feature": "lulc_class__SNOW_GLACIER",
+      "importance": 0.0,
+      "rank": 32
+    },
+    {
+      "feature": "lulc_class__WATER",
+      "importance": 0.0,
+      "rank": 33
+    },
+    {
+      "feature": "lithology_class__ACID_PLUTONIC",
+      "importance": 0.0,
+      "rank": 34
+    },
+    {
+      "feature": "lithology_class__METAMORPHIC",
+      "importance": 0.0,
+      "rank": 35
+    },
+    {
+      "feature": "lithology_class__MIXED_SEDIMENTARY",
+      "importance": 0.0,
+      "rank": 36
+    },
+    {
+      "feature": "lithology_class__SILICICLASTIC_SEDIMENTARY",
+      "importance": 0.0,
+      "rank": 37
+    },
+    {
+      "feature": "lithology_class__UNCONSOLIDATED",
+      "importance": 0.0,
+      "rank": 38
+    },
+    {
+      "feature": "lithology_class__VOLCANIC",
+      "importance": 0.0,
+      "rank": 39
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "version": "0.7",
+  "generated_at_utc": "2026-09-08T12:59:26.920315+00:00",
+  "source": {
+    "authoritative_intended_source": "GSI Bhukosh - Geological Survey of India (intended authoritative source)",
+    "fallback_source": "Global Lithological Map (GLiM) - ArcGIS fallback",
+    "fallback_status": "USED_FOR_PREPROCESSING",
+    "note": "GLiM is used only as a fallback because the GSI Bhukosh lithology service is not reliably available from the preprocessing environment. GLiM is not represented as a GSI dataset."
+  },
+  "counts": {
+    "total_records": 39,
+    "positive_records": 14,
+    "background_records": 25,
+    "exact_matches": 39,
+    "multiple_polygon_matches": 0,
+    "no_match": 0,
+    "missing_coordinates": 0,
+    "invalid_coordinates": 0,
+    "request_errors": 0,
+    "lithology_available": 39,
+    "other_class": 0
+  },
+  "coverage": {
+    "overall_percent": 100.0,
+    "positive_percent": 100.0,
+    "background_percent": 100.0
+  },
+  "lithology_classes": {
+    "ACID_PLUTONIC": 3,
+    "METAMORPHIC": 12,
+    "MIXED_SEDIMENTARY": 2,
+    "SILICICLASTIC_SEDIMENTARY": 13,
+    "UNCONSOLIDATED": 8,
+    "VOLCANIC": 1
+  },
+  "quality": {
+    "status": "PASS",
+    "requirements": {
+      "no_request_errors": true,
+      "no_missing_coordinates": true,
+      "no_invalid_coordinates": true,
+      "complete_polygon_coverage": true,
+      "lithology_available_for_all": true
+    }
+  },
+  "database_modified": false
+}

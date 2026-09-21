@@ -1,0 +1,119 @@
+{
+  "dataset": "BhooPehra Infrastructure Geometry Enrichment",
+  "source": "https://overpass-api.de/api/interpreter",
+  "source_license": "OpenStreetMap ODbL",
+  "generated_at_utc": "2026-09-08T16:29:28.291931+00:00",
+  "dry_run": false,
+  "assets_considered": 10,
+  "overpass_elements_returned": 13,
+  "updated_count": 2,
+  "review_required_count": 0,
+  "no_match_count": 8,
+  "updated": [
+    {
+      "asset_id": 8,
+      "asset_code": "HP-001",
+      "name": "District Hospital",
+      "asset_type": "HOSPITAL",
+      "match_score": 100.0,
+      "element_type": "node",
+      "element_id": 5187607837,
+      "geometry_type": "Point",
+      "tags": {
+        "addr:district": "Dibang Valley",
+        "addr:state": "Arunachal Pradesh",
+        "addr:subdistrict": "Anini Circle",
+        "amenity": "hospital",
+        "description": "District Hospital",
+        "healthcare": "hospital",
+        "name": "District Hospital",
+        "name:en": "District hospital",
+        "source": "OpenGovernmentData"
+      },
+      "geometry_wkt": "POINT (95.910334 28.7967948)",
+      "status": "UPDATED"
+    },
+    {
+      "asset_id": 9,
+      "asset_code": "BR-002",
+      "name": "Dibang River Bridge",
+      "asset_type": "BRIDGE",
+      "match_score": 100.0,
+      "element_type": "way",
+      "element_id": 82262524,
+      "geometry_type": "Point",
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Dibang River Bridge",
+        "ref": "NH13",
+        "ref:old": "NH52",
+        "wikidata": "Q56276624",
+        "wikipedia": "en:Dibang River Bridge"
+      },
+      "geometry_wkt": "POINT (95.72747865424424 28.135191451609483)",
+      "status": "UPDATED"
+    }
+  ],
+  "review_required": [],
+  "no_match": [
+    {
+      "asset_id": 2,
+      "asset_code": "RD-001",
+      "name": "Gangtok-Nathula Road",
+      "asset_type": "ROAD",
+      "reason": "NO_VERIFIED_OSM_NAME_MATCH"
+    },
+    {
+      "asset_id": 3,
+      "asset_code": "BR-001",
+      "name": "Ranipool Bridge",
+      "asset_type": "BRIDGE",
+      "reason": "NO_VERIFIED_OSM_NAME_MATCH"
+    },
+    {
+      "asset_id": 4,
+      "asset_code": "RD-002",
+      "name": "Tawang-Bomdila Highway",
+      "asset_type": "ROAD",
+      "reason": "NO_VERIFIED_OSM_NAME_MATCH"
+    },
+    {
+      "asset_id": 5,
+      "asset_code": "VL-001",
+      "name": "Lumla Village",
+      "asset_type": "VILLAGE",
+      "reason": "NO_VERIFIED_OSM_NAME_MATCH"
+    },
+    {
+      "asset_id": 6,
+      "asset_code": "RD-003",
+      "name": "Roing-Anini Road",
+      "asset_type": "ROAD",
+      "reason": "NO_VERIFIED_OSM_NAME_MATCH"
+    },
+    {
+      "asset_id": 7,
+      "asset_code": "SC-001",
+      "name": "Government Secondary School",
+      "asset_type": "SCHOOL",
+      "reason": "NO_VERIFIED_OSM_NAME_MATCH"
+    },
+    {
+      "asset_id": 10,
+      "asset_code": "VL-002",
+      "name": "Aizawl Hills Settlement",
+      "asset_type": "VILLAGE",
+      "reason": "NO_VERIFIED_OSM_NAME_MATCH"
+    },
+    {
+      "asset_id": 11,
+      "asset_code": "RD-004",
+      "name": "Kohima-Mao Road",
+      "asset_type": "ROAD",
+      "reason": "NO_VERIFIED_OSM_NAME_MATCH"
+    }
+  ],
+  "policy_note": "One-time small-volume read-only Overpass lookup; no automated bulk geocoding or tile scraping."
+}

@@ -1,0 +1,366 @@
+{
+  "dataset": "BhooPehra GSI Positive Event Candidates",
+  "version": "0.1",
+  "generated_at_utc": "2026-09-07T17:40:19.831776+00:00",
+  "database_operation": "READ_ONLY",
+  "label_definition": {
+    "label_1": "GSI-reported landslide event",
+    "label_0": "Not generated yet"
+  },
+  "records": [
+    {
+      "sample_id": "GSI_EVENT_7",
+      "label": 1,
+      "label_name": "LANDSLIDE_EVENT",
+      "sample_type": "SINGLETON_POSITIVE",
+      "cluster_id": 3,
+      "cluster_size": 1,
+      "source_event_ids": [
+        7
+      ],
+      "source_record_ids": [
+        "GSI-AR-2020-TIGDO"
+      ],
+      "state": "Arunachal Pradesh",
+      "district": "Papum Pare",
+      "slide_name": "Tigdo Slide",
+      "occurrence_date": "2020-07-10",
+      "latitude": 27.1346944444,
+      "longitude": 93.7434722222,
+      "cluster_date_span_days": 0,
+      "cluster_max_distance_km": 0.0,
+      "source": "GSI",
+      "verification_status": "GSI_VERIFIED"
+    },
+    {
+      "sample_id": "GSI_EVENT_5",
+      "label": 1,
+      "label_name": "LANDSLIDE_EVENT",
+      "sample_type": "SINGLETON_POSITIVE",
+      "cluster_id": 2,
+      "cluster_size": 1,
+      "source_event_ids": [
+        5
+      ],
+      "source_record_ids": [
+        "GSI-SK-2021-INDIRA-BYPASS-I"
+      ],
+      "state": "Sikkim",
+      "district": "East District",
+      "slide_name": "Indira Bye Pass-I",
+      "occurrence_date": "2021-05-18",
+      "latitude": 27.3288888889,
+      "longitude": 88.6077777778,
+      "cluster_date_span_days": 0,
+      "cluster_max_distance_km": 0.0,
+      "source": "GSI",
+      "verification_status": "GSI_VERIFIED"
+    },
+    {
+      "sample_id": "GSI_CLUSTER_1",
+      "label": 1,
+      "label_name": "LANDSLIDE_EVENT",
+      "sample_type": "CLUSTERED_POSITIVE",
+      "cluster_id": 1,
+      "cluster_size": 10,
+      "source_event_ids": [
+        6,
+        22,
+        24,
+        26,
+        28,
+        29,
+        30,
+        27,
+        23,
+        25
+      ],
+      "source_record_ids": [
+        "GSI-SK-2021-SWASTIK-II",
+        "44",
+        "46",
+        "48",
+        "50",
+        "51",
+        "52",
+        "49",
+        "45",
+        "47"
+      ],
+      "state": "Sikkim",
+      "district": "East District",
+      "slide_name": "Multi-observation GSI landslide episode",
+      "occurrence_date": "2021-06-06",
+      "latitude": 27.3533333,
+      "longitude": 88.6165667,
+      "cluster_date_span_days": 2,
+      "cluster_max_distance_km": 3.516,
+      "source": "GSI",
+      "verification_status": "GSI_REPORTED_SPATIAL"
+    },
+    {
+      "sample_id": "GSI_EVENT_12",
+      "label": 1,
+      "label_name": "LANDSLIDE_EVENT",
+      "sample_type": "SINGLETON_POSITIVE",
+      "cluster_id": 7,
+      "cluster_size": 1,
+      "source_event_ids": [
+        12
+      ],
+      "source_record_ids": [
+        "25"
+      ],
+      "state": "Nagaland",
+      "district": "Dimapur District",
+      "slide_name": "Landslide between Chumukedima-Ghaspani along NH 29, Dimapur, Nagaland (8th Sept 2021)",
+      "occurrence_date": "2021-09-08",
+      "latitude": 25.782,
+      "longitude": 93.802,
+      "cluster_date_span_days": 0,
+      "cluster_max_distance_km": 0.0,
+      "source": "GSI",
+      "verification_status": "GSI_REPORTED_SPATIAL"
+    },
+    {
+      "sample_id": "GSI_EVENT_19",
+      "label": 1,
+      "label_name": "LANDSLIDE_EVENT",
+      "sample_type": "SINGLETON_POSITIVE",
+      "cluster_id": 14,
+      "cluster_size": 1,
+      "source_event_ids": [
+        19
+      ],
+      "source_record_ids": [
+        "24"
+      ],
+      "state": "Nagaland",
+      "district": "Wokha District",
+      "slide_name": "Landslide, near Tourist Lodge colony under Wokha town, Wokha District, Nagaland (18th Sept 2021)",
+      "occurrence_date": "2021-09-18",
+      "latitude": 26.107,
+      "longitude": 94.253,
+      "cluster_date_span_days": 0,
+      "cluster_max_distance_km": 0.0,
+      "source": "GSI",
+      "verification_status": "GSI_REPORTED_SPATIAL"
+    },
+    {
+      "sample_id": "GSI_EVENT_17",
+      "label": 1,
+      "label_name": "LANDSLIDE_EVENT",
+      "sample_type": "SINGLETON_POSITIVE",
+      "cluster_id": 12,
+      "cluster_size": 1,
+      "source_event_ids": [
+        17
+      ],
+      "source_record_ids": [
+        "20"
+      ],
+      "state": "Meghalaya",
+      "district": "East Khasi Hills District",
+      "slide_name": "Landslide at Saitbakon, Pynursia Area Along Shillong- Dawki Road, East Khasi Hills District, Meghalaya (4th April 2022)",
+      "occurrence_date": "2022-04-04",
+      "latitude": 25.295,
+      "longitude": 91.932,
+      "cluster_date_span_days": 0,
+      "cluster_max_distance_km": 0.0,
+      "source": "GSI",
+      "verification_status": "GSI_REPORTED_SPATIAL"
+    },
+    {
+      "sample_id": "GSI_EVENT_18",
+      "label": 1,
+      "label_name": "LANDSLIDE_EVENT",
+      "sample_type": "SINGLETON_POSITIVE",
+      "cluster_id": 13,
+      "cluster_size": 1,
+      "source_event_ids": [
+        18
+      ],
+      "source_record_ids": [
+        "21"
+      ],
+      "state": "Meghalaya",
+      "district": "East Khasi Hills District",
+      "slide_name": "Landslide at Umblai and Lynshing Village, East Khasi Hills District, Meghalaya (4th April 2022)",
+      "occurrence_date": "2022-04-04",
+      "latitude": 25.358,
+      "longitude": 91.972,
+      "cluster_date_span_days": 0,
+      "cluster_max_distance_km": 0.0,
+      "source": "GSI",
+      "verification_status": "GSI_REPORTED_SPATIAL"
+    },
+    {
+      "sample_id": "GSI_EVENT_13",
+      "label": 1,
+      "label_name": "LANDSLIDE_EVENT",
+      "sample_type": "SINGLETON_POSITIVE",
+      "cluster_id": 8,
+      "cluster_size": 1,
+      "source_event_ids": [
+        13
+      ],
+      "source_record_ids": [
+        "11"
+      ],
+      "state": "Meghalaya",
+      "district": "West Garo Hills District",
+      "slide_name": "Landslide at Jibalgre, West Garo Hills District, Meghalaya on 9th June 2022",
+      "occurrence_date": "2022-06-09",
+      "latitude": 25.3816333,
+      "longitude": 90.0603389,
+      "cluster_date_span_days": 0,
+      "cluster_max_distance_km": 0.0,
+      "source": "GSI",
+      "verification_status": "GSI_REPORTED_SPATIAL"
+    },
+    {
+      "sample_id": "GSI_EVENT_14",
+      "label": 1,
+      "label_name": "LANDSLIDE_EVENT",
+      "sample_type": "SINGLETON_POSITIVE",
+      "cluster_id": 9,
+      "cluster_size": 1,
+      "source_event_ids": [
+        14
+      ],
+      "source_record_ids": [
+        "13"
+      ],
+      "state": "Meghalaya",
+      "district": "East Jaintia Hills District",
+      "slide_name": "Landslide at Lumshnong, East Jaintia Hills District, Meghalaya on 15th June 2022",
+      "occurrence_date": "2022-06-15",
+      "latitude": 25.1640056,
+      "longitude": 92.3870278,
+      "cluster_date_span_days": 0,
+      "cluster_max_distance_km": 0.0,
+      "source": "GSI",
+      "verification_status": "GSI_REPORTED_SPATIAL"
+    },
+    {
+      "sample_id": "GSI_EVENT_15",
+      "label": 1,
+      "label_name": "LANDSLIDE_EVENT",
+      "sample_type": "SINGLETON_POSITIVE",
+      "cluster_id": 10,
+      "cluster_size": 1,
+      "source_event_ids": [
+        15
+      ],
+      "source_record_ids": [
+        "14"
+      ],
+      "state": "Meghalaya",
+      "district": "South Garo Hills District",
+      "slide_name": "Landslide at Siju, South Garo Hills District, Meghalaya on 17th June 2022",
+      "occurrence_date": "2022-06-17",
+      "latitude": 25.3610333,
+      "longitude": 90.6470083,
+      "cluster_date_span_days": 0,
+      "cluster_max_distance_km": 0.0,
+      "source": "GSI",
+      "verification_status": "GSI_REPORTED_SPATIAL"
+    },
+    {
+      "sample_id": "GSI_EVENT_16",
+      "label": 1,
+      "label_name": "LANDSLIDE_EVENT",
+      "sample_type": "SINGLETON_POSITIVE",
+      "cluster_id": 11,
+      "cluster_size": 1,
+      "source_event_ids": [
+        16
+      ],
+      "source_record_ids": [
+        "15"
+      ],
+      "state": "Meghalaya",
+      "district": "South Garo Hills District",
+      "slide_name": "Landslide at Baghmara, South Garo Hills District, Meghalaya on 17th June 2022",
+      "occurrence_date": "2022-06-17",
+      "latitude": 25.2127389,
+      "longitude": 90.6321611,
+      "cluster_date_span_days": 0,
+      "cluster_max_distance_km": 0.0,
+      "source": "GSI",
+      "verification_status": "GSI_REPORTED_SPATIAL"
+    },
+    {
+      "sample_id": "GSI_EVENT_9",
+      "label": 1,
+      "label_name": "LANDSLIDE_EVENT",
+      "sample_type": "SINGLETON_POSITIVE",
+      "cluster_id": 4,
+      "cluster_size": 1,
+      "source_event_ids": [
+        9
+      ],
+      "source_record_ids": [
+        "3"
+      ],
+      "state": "Mizoram",
+      "district": "Aizawl District",
+      "slide_name": "Landslide at Vaivakawn, Aizwal District, Mizoram on 09th June 2023",
+      "occurrence_date": "2023-06-09",
+      "latitude": 23.7415083,
+      "longitude": 92.7078583,
+      "cluster_date_span_days": 0,
+      "cluster_max_distance_km": 0.0,
+      "source": "GSI",
+      "verification_status": "GSI_REPORTED_SPATIAL"
+    },
+    {
+      "sample_id": "GSI_EVENT_10",
+      "label": 1,
+      "label_name": "LANDSLIDE_EVENT",
+      "sample_type": "SINGLETON_POSITIVE",
+      "cluster_id": 5,
+      "cluster_size": 1,
+      "source_event_ids": [
+        10
+      ],
+      "source_record_ids": [
+        "4"
+      ],
+      "state": "Meghalaya",
+      "district": "West Khasi Hills District",
+      "slide_name": "Landslide at Pyndengrei Village, West Khasi Hills District, Meghalaya on 17th June 2023",
+      "occurrence_date": "2023-06-17",
+      "latitude": 25.5290139,
+      "longitude": 91.2618861,
+      "cluster_date_span_days": 0,
+      "cluster_max_distance_km": 0.0,
+      "source": "GSI",
+      "verification_status": "GSI_REPORTED_SPATIAL"
+    },
+    {
+      "sample_id": "GSI_EVENT_11",
+      "label": 1,
+      "label_name": "LANDSLIDE_EVENT",
+      "sample_type": "SINGLETON_POSITIVE",
+      "cluster_id": 6,
+      "cluster_size": 1,
+      "source_event_ids": [
+        11
+      ],
+      "source_record_ids": [
+        "5"
+      ],
+      "state": "Assam",
+      "district": "Kamrup Metro District",
+      "slide_name": "Landslide at Dhirenpara, Fatasil hill, Kamrup Metro District, Assam on 17th June 2023",
+      "occurrence_date": "2023-06-17",
+      "latitude": 26.1505375,
+      "longitude": 91.7279814,
+      "cluster_date_span_days": 0,
+      "cluster_max_distance_km": 0.0,
+      "source": "GSI",
+      "verification_status": "GSI_REPORTED_SPATIAL"
+    }
+  ]
+}

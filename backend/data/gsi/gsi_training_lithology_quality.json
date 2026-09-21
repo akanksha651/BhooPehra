@@ -1,0 +1,26 @@
+{
+  "status": "success",
+  "overall_status": "PASS",
+  "total_records": 39,
+  "positive_records": 14,
+  "background_records": 25,
+  "lithology_available": 39,
+  "lithology_missing": 0,
+  "coverage_percent": 100.0,
+  "exact_matches": 39,
+  "no_match": 0,
+  "errors": 0,
+  "missing_coordinates": 0,
+  "positive_lithology_available": 14,
+  "background_lithology_available": 25,
+  "normalized_class_counts": {
+    "OTHER": 39
+  },
+  "intended_authoritative_source": "GSI Bhukosh Lithology",
+  "intended_authoritative_source_url": "https://bhukosh.gsi.gov.in/Bhukosh/Public",
+  "authoritative_source_status": "UNAVAILABLE_FROM_PREPROCESSING_ENVIRONMENT",
+  "fallback_source": "Global Lithological Map (GLiM) - Niveau I",
+  "fallback_service": "https://services8.arcgis.com/4KhTMTZ1x0f76DSg/ArcGIS/rest/services/GLiM_Niveau_I/FeatureServer/1",
+  "provenance_note": "GSI Bhukosh is the intended authoritative lithology source. The Bhukosh endpoint was unreachable from the preprocessing environment during validation, so no GSI values were fabricated. GLiM is used as an explicit external fallback. Each record stores source provenance.",
+  "database_modified": false
+}

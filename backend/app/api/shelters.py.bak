@@ -1,0 +1,482 @@
+﻿from __future__ import annotations
+
+from typing import Any
+
+from fastapi import APIRouter, Depends, Header, HTTPException, Query
+from pydantic import BaseModel, Field
+from sqlalchemy import text
+from sqlalchemy.orm import Session
+
+from app.db.database import get_db
+
+
+router = APIRouter(
+    prefix="/api/shelters",
+    tags=["Shelters"],
+)
+
+# Nearby shelter discovery must not present a shelter from a distant
+# region as if it were locally reachable. The value is deliberately a
+# discovery boundary; final evacuation routing still uses the real
+# pgRouting network and its own snap/reachability checks.
+MAX_NEARBY_SHELTER_DISTANCE_M = 50_000.0
+
+
+class ShelterLocationUpdate(BaseModel):
+    latitude: float = Field(ge=-90.0, le=90.0)
+    longitude: float = Field(ge=-180.0, le=180.0)
+
+
+def _registry_counts(db: Session) -> dict[str, int]:
+    row = db.execute(
+        text(
+            """
+            SELECT
+                COUNT(*)::int AS registered_shelters,
+                COUNT(*) FILTER (
+                    WHERE geometry IS NOT NULL
+                )::int AS mapped_shelters,
+                COUNT(*) FILTER (
+                    WHERE geometry IS NULL
+                )::int AS location_pending
+            FROM infrastructure_assets
+            WHERE UPPER(asset_type) = 'SHELTER'
+            """
+        )
+    ).mappings().one()
+
+    return {
+        "registered_shelters": int(row["registered_shelters"] or 0),
+        "mapped_shelters": int(row["mapped_shelters"] or 0),
+        "location_pending": int(row["location_pending"] or 0),
+    }
+
+
+def _safety_status(risk_level: str | None) -> str:
+    level = (risk_level or "").upper()
+
+    if level in {"CRITICAL", "HIGH"}:
+        return "NOT_RECOMMENDED"
+    if level == "MODERATE":
+        return "CAUTION"
+    if level == "LOW":
+        return "LOW_RISK"
+
+    return "ZONE_NOT_ASSIGNED"
+
+
+def _serialize_shelter(row: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "id": int(row["id"]),
+        "asset_code": row["asset_code"],
+        "name": row["name"],
+        "district_id": (
+            int(row["district_id"])
+            if row["district_id"] is not None
+            else None
+        ),
+        "capacity": (
+            int(row["capacity"])
+            if row["capacity"] is not None
+            else None
+        ),
+        "source": row["source"],
+        "risk_zone_id": (
+            int(row["risk_zone_id"])
+            if row["risk_zone_id"] is not None
+            else None
+        ),
+        "risk_level": row["risk_level"],
+        "safety_status": _safety_status(row["risk_level"]),
+        "distance_km": (
+            round(float(row["distance_m"]) / 1000.0, 3)
+            if row.get("distance_m") is not None
+            else None
+        ),
+        "latitude": (
+            float(row["latitude"])
+            if row.get("latitude") is not None
+            else None
+        ),
+        "longitude": (
+            float(row["longitude"])
+            if row.get("longitude") is not None
+            else None
+        ),
+        "geometry_available": bool(row.get("geometry_available")),
+        "location_verification": (
+            "LOCALITY_COORDINATE"
+            if "coordinate_basis=LOCALITY_COORDINATE" in (row.get("source") or "")
+            else (
+                "VERIFIED_GEOMETRY"
+                if row.get("geometry_available")
+                else "LOCATION_PENDING"
+            )
+        ),
+    }
+
+
+@router.get("/registry")
+def get_shelter_registry(
+    db: Session = Depends(get_db),
+) -> dict[str, Any]:
+    counts = _registry_counts(db)
+
+    rows = db.execute(
+        text(
+            """
+            SELECT
+                ia.id,
+                ia.asset_code,
+                ia.name,
+                ia.district_id,
+                ia.capacity,
+                ia.source,
+                ia.risk_zone_id,
+                rz.risk_level,
+                CASE
+                    WHEN ia.geometry IS NOT NULL THEN TRUE
+                    ELSE FALSE
+                END AS geometry_available,
+                CASE
+                    WHEN ia.geometry IS NOT NULL
+                    THEN ST_Y(ia.geometry)
+                    ELSE NULL
+                END AS latitude,
+                CASE
+                    WHEN ia.geometry IS NOT NULL
+                    THEN ST_X(ia.geometry)
+                    ELSE NULL
+                END AS longitude
+            FROM infrastructure_assets ia
+            LEFT JOIN risk_zones rz
+                ON rz.id = ia.risk_zone_id
+            WHERE UPPER(ia.asset_type) = 'SHELTER'
+            ORDER BY ia.id
+            """
+        )
+    ).mappings().all()
+
+    shelters = [
+        _serialize_shelter(dict(row))
+        for row in rows
+    ]
+
+    return {
+        "status": "success",
+        "result_status": (
+            "MAPPED_SHELTERS_AVAILABLE"
+            if counts["mapped_shelters"] > 0
+            else "NO_MAPPED_SHELTERS_AVAILABLE"
+        ),
+        "shelter_registry": counts,
+        "shelters": shelters,
+    }
+
+
+@router.get("/nearest")
+def get_nearest_shelters(
+    latitude: float = Query(..., ge=-90.0, le=90.0),
+    longitude: float = Query(..., ge=-180.0, le=180.0),
+    limit: int = Query(5, ge=1, le=20),
+    db: Session = Depends(get_db),
+) -> dict[str, Any]:
+    counts = _registry_counts(db)
+
+    if counts["mapped_shelters"] == 0:
+        rows = db.execute(
+            text(
+                """
+                SELECT
+                    ia.id,
+                    ia.asset_code,
+                    ia.name,
+                    ia.district_id,
+                    ia.capacity,
+                    ia.risk_zone_id,
+                    rz.risk_level,
+                    CASE
+                        WHEN ia.geometry IS NOT NULL THEN TRUE
+                        ELSE FALSE
+                    END AS geometry_available,
+                    CASE
+                        WHEN ia.geometry IS NOT NULL
+                        THEN ST_Y(ia.geometry)
+                        ELSE NULL
+                    END AS latitude,
+                    CASE
+                        WHEN ia.geometry IS NOT NULL
+                        THEN ST_X(ia.geometry)
+                        ELSE NULL
+                    END AS longitude
+                FROM infrastructure_assets ia
+                LEFT JOIN risk_zones rz
+                    ON rz.id = ia.risk_zone_id
+                WHERE UPPER(ia.asset_type) = 'SHELTER'
+                ORDER BY ia.id
+                """
+            )
+        ).mappings().all()
+
+        return {
+            "status": "success",
+            "result_status": "NO_MAPPED_SHELTERS_AVAILABLE",
+            "query": {
+                "latitude": latitude,
+                "longitude": longitude,
+            },
+            "shelter_registry": counts,
+            "shelters": [
+                _serialize_shelter(dict(row))
+                for row in rows
+            ],
+            "safety_note": (
+                "Shelter names and capacities are available from the "
+                "registered database, but no shelter has verified "
+                "coordinates yet."
+            ),
+            "routing_note": (
+                "A road route cannot be calculated until a shelter "
+                "has verified geometry."
+            ),
+        }
+
+    rows = db.execute(
+        text(
+            """
+            WITH query_point AS (
+                SELECT ST_SetSRID(
+                    ST_MakePoint(:longitude, :latitude),
+                    4326
+                )::geography AS geom
+            )
+            SELECT
+                ia.id,
+                ia.asset_code,
+                ia.name,
+                ia.district_id,
+                ia.capacity,
+                ia.source,
+                ia.risk_zone_id,
+                rz.risk_level,
+                TRUE AS geometry_available,
+                ST_Y(ia.geometry) AS latitude,
+                ST_X(ia.geometry) AS longitude,
+                ST_Distance(
+                    ia.geometry::geography,
+                    query_point.geom
+                ) AS distance_m
+            FROM infrastructure_assets ia
+            CROSS JOIN query_point
+            LEFT JOIN risk_zones rz
+                ON rz.id = ia.risk_zone_id
+            WHERE UPPER(ia.asset_type) = 'SHELTER'
+              AND ia.geometry IS NOT NULL
+              AND ST_DWithin(
+                  ia.geometry::geography,
+                  query_point.geom,
+                  :max_nearby_distance_m
+              )
+            ORDER BY
+                CASE
+                    WHEN UPPER(COALESCE(rz.risk_level, '')) IN ('CRITICAL', 'HIGH')
+                    THEN 1
+                    ELSE 0
+                END,
+                ST_Distance(
+                    ia.geometry::geography,
+                    query_point.geom
+                )
+            LIMIT :limit
+            """
+        ),
+        {
+            "latitude": latitude,
+            "longitude": longitude,
+            "limit": limit,
+            "max_nearby_distance_m": MAX_NEARBY_SHELTER_DISTANCE_M,
+        },
+    ).mappings().all()
+
+    if not rows:
+        return {
+            "status": "success",
+            "result_status": "NO_MAPPED_SHELTERS_IN_CURRENT_AREA",
+            "query": {
+                "latitude": latitude,
+                "longitude": longitude,
+            },
+            "shelter_registry": counts,
+            "shelters": [],
+            "safety_note": (
+                "No Authority-verified shelter is mapped within "
+                f"{MAX_NEARBY_SHELTER_DISTANCE_M / 1000.0:.0f} km of the "
+                "current location. Registered shelters outside this area "
+                "are not presented as nearby shelters."
+            ),
+            "routing_note": (
+                "Evacuation routing requires a locally relevant verified "
+                "shelter and a reachable real road-network path."
+            ),
+        }
+
+    shelters = [
+        _serialize_shelter(dict(row))
+        for row in rows
+    ]
+
+    return {
+        "status": "success",
+        "result_status": "MAPPED_SHELTERS_AVAILABLE",
+        "query": {
+            "latitude": latitude,
+            "longitude": longitude,
+        },
+        "shelter_registry": counts,
+        "shelters": shelters,
+        "safety_note": (
+            "Shelters inside CRITICAL/HIGH assigned risk zones are "
+            "not recommended. Remaining mapped shelters are ordered "
+            "by safety state and network proximity."
+        ),
+    }
+
+
+@router.get("/{shelter_id}")
+def get_shelter(
+    shelter_id: int,
+    db: Session = Depends(get_db),
+) -> dict[str, Any]:
+    row = db.execute(
+        text(
+            """
+            SELECT
+                ia.id,
+                ia.asset_code,
+                ia.name,
+                ia.district_id,
+                ia.capacity,
+                ia.source,
+                ia.risk_zone_id,
+                rz.risk_level,
+                CASE
+                    WHEN ia.geometry IS NOT NULL THEN TRUE
+                    ELSE FALSE
+                END AS geometry_available,
+                CASE
+                    WHEN ia.geometry IS NOT NULL
+                    THEN ST_Y(ia.geometry)
+                    ELSE NULL
+                END AS latitude,
+                CASE
+                    WHEN ia.geometry IS NOT NULL
+                    THEN ST_X(ia.geometry)
+                    ELSE NULL
+                END AS longitude
+            FROM infrastructure_assets ia
+            LEFT JOIN risk_zones rz
+                ON rz.id = ia.risk_zone_id
+            WHERE ia.id = :shelter_id
+              AND UPPER(ia.asset_type) = 'SHELTER'
+            """
+        ),
+        {"shelter_id": shelter_id},
+    ).mappings().first()
+
+    if row is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Shelter not found.",
+        )
+
+    return {
+        "status": "success",
+        "data": _serialize_shelter(dict(row)),
+    }
+
+
+@router.put("/{shelter_id}/location")
+def verify_shelter_location(
+    shelter_id: int,
+    payload: ShelterLocationUpdate,
+    x_role: str | None = Header(default=None),
+    db: Session = Depends(get_db),
+) -> dict[str, Any]:
+    role = (x_role or "").strip().upper()
+
+    if role != "AUTHORITY":
+        raise HTTPException(
+            status_code=403,
+            detail=(
+                "Shelter location verification is restricted to "
+                "the Authority role."
+            ),
+        )
+
+    exists = db.execute(
+        text(
+            """
+            SELECT id
+            FROM infrastructure_assets
+            WHERE id = :shelter_id
+              AND UPPER(asset_type) = 'SHELTER'
+            """
+        ),
+        {"shelter_id": shelter_id},
+    ).scalar_one_or_none()
+
+    if exists is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Shelter not found.",
+        )
+
+    db.execute(
+        text(
+            """
+            UPDATE infrastructure_assets
+            SET
+                geometry = ST_SetSRID(
+                    ST_MakePoint(
+                        :longitude,
+                        :latitude
+                    ),
+                    4326
+                ),
+                risk_zone_id = (
+                    SELECT rz.id
+                    FROM risk_zones rz
+                    WHERE rz.geometry IS NOT NULL
+                      AND ST_Intersects(
+                          rz.geometry,
+                          ST_SetSRID(
+                              ST_MakePoint(
+                                  :longitude,
+                                  :latitude
+                              ),
+                              4326
+                          )
+                      )
+                    ORDER BY rz.id
+                    LIMIT 1
+                )
+            WHERE id = :shelter_id
+              AND UPPER(asset_type) = 'SHELTER'
+            """
+        ),
+        {
+            "shelter_id": shelter_id,
+            "latitude": payload.latitude,
+            "longitude": payload.longitude,
+        },
+    )
+    db.commit()
+
+    return {
+        "status": "success",
+        "message": "Shelter location verified and saved.",
+        "shelter_id": shelter_id,
+        "latitude": payload.latitude,
+        "longitude": payload.longitude,
+        "verification": "VERIFIED_GEOMETRY",
+    }

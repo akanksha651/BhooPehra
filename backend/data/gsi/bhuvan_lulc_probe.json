@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "source": "ISRO / NRSC Bhuvan LULC 50K",
+  "dataset_cycle": "2015-16",
+  "wms_url": "https://bhuvan-vec2.nrsc.gov.in/bhuvan/wms",
+  "state_layers": {
+    "Arunachal Pradesh": "AR_LULC50K_1516",
+    "Assam": "AS_LULC50K_1516",
+    "Meghalaya": "ML_LULC50K_1516",
+    "Manipur": "MN_LULC50K_1516",
+    "Mizoram": "MZ_LULC50K_1516",
+    "Nagaland": "NL_LULC50K_1516",
+    "Sikkim": "SK_LULC50K_1516",
+    "Tripura": "TR_LULC50K_1516"
+  },
+  "capabilities_test": {
+    "success": false,
+    "status_code": null,
+    "content_type": null,
+    "url": null,
+    "error": "HTTPSConnectionPool(host='bhuvan-vec2.nrsc.gov.in', port=443): Read timed out. (read timeout=30)"
+  },
+  "state_probe_results": [
+    {
+      "layer": "AR_LULC50K_1516",
+      "status_code": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "response_size": 914,
+      "url": "https://bhuvan-vec2.nrsc.gov.in/bhuvan/wms?service=WMS&version=1.1.1&request=GetFeatureInfo&layers=lulc%3AAR_LULC50K_1516&query_layers=lulc%3AAR_LULC50K_1516&styles=&bbox=93.72347222%2C27.11469444%2C93.76347222%2C27.15469444&width=101&height=101&srs=EPSG%3A4326&x=50&y=50&info_format=text%2Fhtml&feature_count=10",
+      "success": true,
+      "response_preview": "<html>\n  <head>\n    <title>Geoserver GetFeatureInfo output</title>\n  </head>\n  <style type=\"text/css\">\n\ttable.featureInfo, table.featureInfo td, table.featureInfo th {\n\t\tborder:1px solid #ddd;\n\t\tborder-collapse:collapse;\n\t\tmargin:0;\n\t\tpadding:0;\n\t\tfont-size: 90%;\n\t\tpadding:.2em .1em;\n\t}\n\ttable.featureInfo th {\n\t    padding:.2em .2em;\n\t\tfont-weight:bold;\n\t\tbackground:#eee;\n\t}\n\ttable.featureInfo td{\n\t\tbackground:#fff;\n\t}\n\ttable.featureInfo tr.odd td{\n\t\tbackground:#eee;\n\t}\n\ttable.featureInfo caption{\n\t\ttext-align:left;\n\t\tfont-size:100%;\n\t\tfont-weight:bold;\n\t\tpadding:.2em .2em;\n\t}\n  </style>\n  <body>\n  \n<br>\r\n<b> LULC Description:</b>\r\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\">\r\n<tr>\r\n<td><b>Feature ID</b></td>\r\n<td><b>Description</b></td>\r\n<td><b>Area(ha)</b></td>\r\n</tr>\r\n<tr>\r\n<td>AR_LULC50K_1516.22869</td>\r\n<td>Builtup,Urban</td>\r\n<td>3.12725852713</td>\r\n</tr>\r\n  \r\n</table>\r\n\r\n  </body>\n</html>",
+      "error": null,
+      "state": "Arunachal Pradesh",
+      "sample_id": "GSI_EVENT_7"
+    },
+    {
+      "layer": "AS_LULC50K_1516",
+      "status_code": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "response_size": 1209,
+      "url": "https://bhuvan-vec2.nrsc.gov.in/bhuvan/wms?service=WMS&version=1.1.1&request=GetFeatureInfo&layers=lulc%3AAS_LULC50K_1516&query_layers=lulc%3AAS_LULC50K_1516&styles=&bbox=91.70798140%2C26.13053750%2C91.74798140%2C26.17053750&width=101&height=101&srs=EPSG%3A4326&x=50&y=50&info_format=text%2Fhtml&feature_count=10",
+      "success": true,
+      "response_preview": "<html>\n  <head>\n    <title>Geoserver GetFeatureInfo output</title>\n  </head>\n  <style type=\"text/css\">\n\ttable.featureInfo, table.featureInfo td, table.featureInfo th {\n\t\tborder:1px solid #ddd;\n\t\tborder-collapse:collapse;\n\t\tmargin:0;\n\t\tpadding:0;\n\t\tfont-size: 90%;\n\t\tpadding:.2em .1em;\n\t}\n\ttable.featureInfo th {\n\t    padding:.2em .2em;\n\t\tfont-weight:bold;\n\t\tbackground:#eee;\n\t}\n\ttable.featureInfo td{\n\t\tbackground:#fff;\n\t}\n\ttable.featureInfo tr.odd td{\n\t\tbackground:#eee;\n\t}\n\ttable.featureInfo caption{\n\t\ttext-align:left;\n\t\tfont-size:100%;\n\t\tfont-weight:bold;\n\t\tpadding:.2em .2em;\n\t}\n  </style>\n  <body>\n  \n<br>\r\n<b> LULC Description:</b>\r\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\">\r\n<tr>\r\n<td><b>Feature ID</b></td>\r\n<td><b>Description</b></td>\r\n<td><b>Area(ha)</b></td>\r\n</tr>\r\n<tr>\r\n<td>AS_LULC50K_1516.32133</td>\r\n<td>Builtup,Urban</td>\r\n<td>30.606200821</td>\r\n</tr>\r\n  \r\n</table>\r\n\r\n<br>\r\n<b> LULC Description:</b>\r\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\">\r\n<tr>\r\n<td><b>Feature ID</b></td>\r\n<td><b>Description</b></td>\r\n<td><b>Area(ha)</b></td>\r\n</tr>\r\n<tr>\r\n<td>AS_LULC50K_1516.32335</td>\r\n<td>Forest,Scrub Forest</td>\r\n<td>3.78720371317</td>\r\n</tr>\r\n  \r\n</table>\r\n\r\n  </body>\n</html>",
+      "error": null,
+      "state": "Assam",
+      "sample_id": "GSI_EVENT_11"
+    },
+    {
+      "layer": "ML_LULC50K_1516",
+      "status_code": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "response_size": 916,
+      "url": "https://bhuvan-vec2.nrsc.gov.in/bhuvan/wms?service=WMS&version=1.1.1&request=GetFeatureInfo&layers=lulc%3AML_LULC50K_1516&query_layers=lulc%3AML_LULC50K_1516&styles=&bbox=91.91200000%2C25.27500000%2C91.95200000%2C25.31500000&width=101&height=101&srs=EPSG%3A4326&x=50&y=50&info_format=text%2Fhtml&feature_count=10",
+      "success": true,
+      "response_preview": "<html>\n  <head>\n    <title>Geoserver GetFeatureInfo output</title>\n  </head>\n  <style type=\"text/css\">\n\ttable.featureInfo, table.featureInfo td, table.featureInfo th {\n\t\tborder:1px solid #ddd;\n\t\tborder-collapse:collapse;\n\t\tmargin:0;\n\t\tpadding:0;\n\t\tfont-size: 90%;\n\t\tpadding:.2em .1em;\n\t}\n\ttable.featureInfo th {\n\t    padding:.2em .2em;\n\t\tfont-weight:bold;\n\t\tbackground:#eee;\n\t}\n\ttable.featureInfo td{\n\t\tbackground:#fff;\n\t}\n\ttable.featureInfo tr.odd td{\n\t\tbackground:#eee;\n\t}\n\ttable.featureInfo caption{\n\t\ttext-align:left;\n\t\tfont-size:100%;\n\t\tfont-weight:bold;\n\t\tpadding:.2em .2em;\n\t}\n  </style>\n  <body>\n  \n<br>\r\n<b> LULC Description:</b>\r\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\">\r\n<tr>\r\n<td><b>Feature ID</b></td>\r\n<td><b>Description</b></td>\r\n<td><b>Area(ha)</b></td>\r\n</tr>\r\n<tr>\r\n<td>ML_LULC50K_1516.6922</td>\r\n<td>Forest,Deciduous</td>\r\n<td>562.181351117</td>\r\n</tr>\r\n  \r\n</table>\r\n\r\n  </body>\n</html>",
+      "error": null,
+      "state": "Meghalaya",
+      "sample_id": "GSI_EVENT_17"
+    },
+    {
+      "layer": "MZ_LULC50K_1516",
+      "status_code": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "response_size": 911,
+      "url": "https://bhuvan-vec2.nrsc.gov.in/bhuvan/wms?service=WMS&version=1.1.1&request=GetFeatureInfo&layers=lulc%3AMZ_LULC50K_1516&query_layers=lulc%3AMZ_LULC50K_1516&styles=&bbox=92.68785830%2C23.72150830%2C92.72785830%2C23.76150830&width=101&height=101&srs=EPSG%3A4326&x=50&y=50&info_format=text%2Fhtml&feature_count=10",
+      "success": true,
+      "response_preview": "<html>\n  <head>\n    <title>Geoserver GetFeatureInfo output</title>\n  </head>\n  <style type=\"text/css\">\n\ttable.featureInfo, table.featureInfo td, table.featureInfo th {\n\t\tborder:1px solid #ddd;\n\t\tborder-collapse:collapse;\n\t\tmargin:0;\n\t\tpadding:0;\n\t\tfont-size: 90%;\n\t\tpadding:.2em .1em;\n\t}\n\ttable.featureInfo th {\n\t    padding:.2em .2em;\n\t\tfont-weight:bold;\n\t\tbackground:#eee;\n\t}\n\ttable.featureInfo td{\n\t\tbackground:#fff;\n\t}\n\ttable.featureInfo tr.odd td{\n\t\tbackground:#eee;\n\t}\n\ttable.featureInfo caption{\n\t\ttext-align:left;\n\t\tfont-size:100%;\n\t\tfont-weight:bold;\n\t\tpadding:.2em .2em;\n\t}\n  </style>\n  <body>\n  \n<br>\r\n<b> LULC Description:</b>\r\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\">\r\n<tr>\r\n<td><b>Feature ID</b></td>\r\n<td><b>Description</b></td>\r\n<td><b>Area(ha)</b></td>\r\n</tr>\r\n<tr>\r\n<td>MZ_LULC50K_1516.11</td>\r\n<td>Builtup,Urban</td>\r\n<td>31.1417103216</td>\r\n</tr>\r\n  \r\n</table>\r\n\r\n  </body>\n</html>",
+      "error": null,
+      "state": "Mizoram",
+      "sample_id": "GSI_EVENT_9"
+    },
+    {
+      "layer": "NL_LULC50K_1516",
+      "status_code": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "response_size": 1243,
+      "url": "https://bhuvan-vec2.nrsc.gov.in/bhuvan/wms?service=WMS&version=1.1.1&request=GetFeatureInfo&layers=lulc%3ANL_LULC50K_1516&query_layers=lulc%3ANL_LULC50K_1516&styles=&bbox=93.78200000%2C25.76200000%2C93.82200000%2C25.80200000&width=101&height=101&srs=EPSG%3A4326&x=50&y=50&info_format=text%2Fhtml&feature_count=10",
+      "success": true,
+      "response_preview": "<html>\n  <head>\n    <title>Geoserver GetFeatureInfo output</title>\n  </head>\n  <style type=\"text/css\">\n\ttable.featureInfo, table.featureInfo td, table.featureInfo th {\n\t\tborder:1px solid #ddd;\n\t\tborder-collapse:collapse;\n\t\tmargin:0;\n\t\tpadding:0;\n\t\tfont-size: 90%;\n\t\tpadding:.2em .1em;\n\t}\n\ttable.featureInfo th {\n\t    padding:.2em .2em;\n\t\tfont-weight:bold;\n\t\tbackground:#eee;\n\t}\n\ttable.featureInfo td{\n\t\tbackground:#fff;\n\t}\n\ttable.featureInfo tr.odd td{\n\t\tbackground:#eee;\n\t}\n\ttable.featureInfo caption{\n\t\ttext-align:left;\n\t\tfont-size:100%;\n\t\tfont-weight:bold;\n\t\tpadding:.2em .2em;\n\t}\n  </style>\n  <body>\n  \n<br>\r\n<b> LULC Description:</b>\r\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\">\r\n<tr>\r\n<td><b>Feature ID</b></td>\r\n<td><b>Description</b></td>\r\n<td><b>Area(ha)</b></td>\r\n</tr>\r\n<tr>\r\n<td>NL_LULC50K_1516.104</td>\r\n<td>Forest,Forest Plantation</td>\r\n<td>0.71680926737</td>\r\n</tr>\r\n  \r\n</table>\r\n\r\n<br>\r\n<b> LULC Description:</b>\r\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\">\r\n<tr>\r\n<td><b>Feature ID</b></td>\r\n<td><b>Description</b></td>\r\n<td><b>Area(ha)</b></td>\r\n</tr>\r\n<tr>\r\n<td>NL_LULC50K_1516.568</td>\r\n<td>Wetland / Waterbodies,River / Stream / Canals</td>\r\n<td>16.3681734984</td>\r\n</tr>\r\n  \r\n</table>\r\n\r\n  </body>\n</html>",
+      "error": null,
+      "state": "Nagaland",
+      "sample_id": "GSI_EVENT_12"
+    },
+    {
+      "layer": "SK_LULC50K_1516",
+      "status_code": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "response_size": 911,
+      "url": "https://bhuvan-vec2.nrsc.gov.in/bhuvan/wms?service=WMS&version=1.1.1&request=GetFeatureInfo&layers=lulc%3ASK_LULC50K_1516&query_layers=lulc%3ASK_LULC50K_1516&styles=&bbox=88.58777778%2C27.30888889%2C88.62777778%2C27.34888889&width=101&height=101&srs=EPSG%3A4326&x=50&y=50&info_format=text%2Fhtml&feature_count=10",
+      "success": true,
+      "response_preview": "<html>\n  <head>\n    <title>Geoserver GetFeatureInfo output</title>\n  </head>\n  <style type=\"text/css\">\n\ttable.featureInfo, table.featureInfo td, table.featureInfo th {\n\t\tborder:1px solid #ddd;\n\t\tborder-collapse:collapse;\n\t\tmargin:0;\n\t\tpadding:0;\n\t\tfont-size: 90%;\n\t\tpadding:.2em .1em;\n\t}\n\ttable.featureInfo th {\n\t    padding:.2em .2em;\n\t\tfont-weight:bold;\n\t\tbackground:#eee;\n\t}\n\ttable.featureInfo td{\n\t\tbackground:#fff;\n\t}\n\ttable.featureInfo tr.odd td{\n\t\tbackground:#eee;\n\t}\n\ttable.featureInfo caption{\n\t\ttext-align:left;\n\t\tfont-size:100%;\n\t\tfont-weight:bold;\n\t\tpadding:.2em .2em;\n\t}\n  </style>\n  <body>\n  \n<br>\r\n<b> LULC Description:</b>\r\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\">\r\n<tr>\r\n<td><b>Feature ID</b></td>\r\n<td><b>Description</b></td>\r\n<td><b>Area(ha)</b></td>\r\n</tr>\r\n<tr>\r\n<td>SK_LULC50K_1516.21</td>\r\n<td>Builtup,Urban</td>\r\n<td>10.3807037468</td>\r\n</tr>\r\n  \r\n</table>\r\n\r\n  </body>\n</html>",
+      "error": null,
+      "state": "Sikkim",
+      "sample_id": "GSI_EVENT_5"
+    }
+  ],
+  "successful_state_probes": 6,
+  "total_state_probes": 6,
+  "notes": [
+    "This probe does not modify the PostgreSQL database.",
+    "No LULC values are invented.",
+    "The next extraction step will only proceed if the Bhuvan WMS returns usable point information."
+  ]
+}

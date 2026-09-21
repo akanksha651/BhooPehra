@@ -1,0 +1,73 @@
+{
+  "dataset": "BhooPehra GSI Negative Sampling Quality",
+  "generated_at_utc": "2026-09-08T07:38:56.858309+00:00",
+  "positive_spatial_events": 25,
+  "negative_background_candidates": 25,
+  "positive_to_negative_ratio": 1.0,
+  "states_present_in_background": [
+    "Arunachal Pradesh",
+    "Assam",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Sikkim"
+  ],
+  "missing_state_count": 0,
+  "missing_state_sample_ids": [],
+  "boundary": {
+    "source": "https://raw.githubusercontent.com/india-in-data/india-states-2019/master/india_states.geojson",
+    "status": "PROVISIONAL_2019",
+    "official_2026_boundary_verified": false,
+    "northeast_states": [
+      "Arunachal Pradesh",
+      "Assam",
+      "Manipur",
+      "Meghalaya",
+      "Mizoram",
+      "Nagaland",
+      "Sikkim",
+      "Tripura"
+    ]
+  },
+  "sampling": {
+    "target_count": 25,
+    "generated_count": 25,
+    "attempts": 81,
+    "max_candidates": 20000,
+    "acceptance_rate": 0.3086,
+    "rejections": {
+      "outside_northeast_boundary": 55,
+      "too_close_to_positive_event": 1,
+      "too_close_to_cluster": 0,
+      "too_close_to_other_negative": 0
+    },
+    "state_counts": {
+      "Arunachal Pradesh": 8,
+      "Assam": 6,
+      "Mizoram": 4,
+      "Nagaland": 3,
+      "Manipur": 2,
+      "Sikkim": 1,
+      "Meghalaya": 1
+    },
+    "sampling_extent": {
+      "min_lat": 21.947346789822518,
+      "max_lat": 29.461386555345314,
+      "min_lon": 88.0168569001259,
+      "max_lon": 97.41529266802229
+    },
+    "minimum_distance_from_event_km": 10.0,
+    "minimum_distance_from_cluster_km": 10.0,
+    "minimum_distance_between_negatives_km": 5.0,
+    "boundary_source": "https://raw.githubusercontent.com/india-in-data/india-states-2019/master/india_states.geojson",
+    "boundary_status": "PROVISIONAL_2019"
+  },
+  "cluster_summary": {
+    "total_clusters": null,
+    "multi_event_clusters": null,
+    "singleton_clusters": null
+  },
+  "training_warning": "BACKGROUND_CANDIDATE does not mean confirmed absence of landslides. Candidates are spatially separated from known positive events and require downstream validation.",
+  "feature_pipeline_note": "State labels are now attached to background candidates so state-specific LULC extraction can be performed."
+}

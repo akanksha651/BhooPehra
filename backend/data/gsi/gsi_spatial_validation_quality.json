@@ -1,0 +1,41 @@
+{
+  "generated_at_utc": "2026-09-08T07:42:16.219511+00:00",
+  "validation_method": "Provisional geographic envelope",
+  "envelope": {
+    "min_latitude": 21.5,
+    "max_latitude": 29.8,
+    "min_longitude": 88.0,
+    "max_longitude": 97.5
+  },
+  "northeast_states": [
+    "ARUNACHAL PRADESH",
+    "ASSAM",
+    "MANIPUR",
+    "MEGHALAYA",
+    "MIZORAM",
+    "NAGALAND",
+    "SIKKIM",
+    "TRIPURA"
+  ],
+  "positive_validation": {
+    "input": 14,
+    "accepted": 14,
+    "rejected_invalid_coordinates": 0,
+    "rejected_outside_envelope": 0
+  },
+  "background_validation": {
+    "input": 25,
+    "accepted": 25,
+    "rejected_invalid_coordinates": 0,
+    "rejected_outside_envelope": 0
+  },
+  "validated_background_candidates": 25,
+  "warnings": [
+    "This is NOT an official administrative boundary.",
+    "The envelope is only a geographic screening layer.",
+    "Background candidates are NOT verified non-landslide observations.",
+    "Official state polygons must be attached before final ML training.",
+    "Terrain, geology, land-cover and rainfall features are not attached yet.",
+    "No database records were modified."
+  ]
+}
