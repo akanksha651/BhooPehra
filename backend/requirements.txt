@@ -9,3 +9,4 @@ geoalchemy2
 
 requests
 py7zr
+scikit-learn
