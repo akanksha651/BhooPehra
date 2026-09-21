@@ -15,3 +15,5 @@ backend/data/roads/*.gpkg
 backend/data/roads/*.gpkg.zip
 
 backend/data/gsi/dem_cache/*.tif
+
+backend/data/gsi/dem_cache/*.tif
