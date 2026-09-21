@@ -10,3 +10,6 @@ backend/.venv/
 !backend/database_schema.sql
 
 **/__pycache__/
+
+backend/data/roads/*.gpkg
+backend/data/roads/*.gpkg.zip
