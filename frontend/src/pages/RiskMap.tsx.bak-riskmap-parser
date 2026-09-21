@@ -434,41 +434,24 @@ function getPointFromGeometry(
 
   const backendGeometry = value as {
     available?: boolean
-    wkt?: unknown
     coordinates?: {
       latitude?: unknown
       longitude?: unknown
     } | null
   }
 
-  if (typeof backendGeometry.wkt === "string") {
-    const pointMatch = backendGeometry.wkt.trim().match(
-      /^POINT\s*\(\s*(-?\d+(?:\.\d+)?)\s+(-?\d+(?:\.\d+)?)\s*\)$/i,
-    )
-
-    if (pointMatch) {
-      const lng = Number(pointMatch[1])
-      const lat = Number(pointMatch[2])
-
-      if (Number.isFinite(lat) && Number.isFinite(lng)) {
-        return [lat, lng]
-      }
-    }
-  }
-
   if (
     backendGeometry.available === true &&
     backendGeometry.coordinates !== null &&
-    typeof backendGeometry.coordinates === "object"
+    typeof backendGeometry.coordinates === "object" &&
+    typeof backendGeometry.coordinates.latitude === "number" &&
+    typeof backendGeometry.coordinates.longitude === "number"
   ) {
-    const lat = Number(backendGeometry.coordinates.latitude)
-    const lng = Number(backendGeometry.coordinates.longitude)
-
-    if (Number.isFinite(lat) && Number.isFinite(lng)) {
-      return [lat, lng]
-    }
+    return [
+      backendGeometry.coordinates.latitude,
+      backendGeometry.coordinates.longitude,
+    ]
   }
-
   return null
 }
 
@@ -4184,4 +4167,3 @@ export default function RiskMapPage() {
     </div>
   )
 }
-
